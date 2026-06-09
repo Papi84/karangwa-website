@@ -20,7 +20,7 @@ export default function Home() {
             </h1>
           </div>
           
-          <div className="hidden md:flex space-x-4 lg:space-x-8 text-sm md:text-base">
+          <div className="hidden md:flex space-x-6 lg:space-x-8 text-base lg:text-lg font-bold">
             <Link href="#home" className="hover:text-[var(--neon-green)] transition duration-300">HOME</Link>
             <Link href="#ishyango" className="hover:text-[var(--neon-green)] transition duration-300">ISHYANGO.AI</Link>
             <Link href="#projects" className="hover:text-[var(--neon-green)] transition duration-300">PROJECTS</Link>
