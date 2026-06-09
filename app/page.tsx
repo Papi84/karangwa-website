@@ -20,12 +20,12 @@ export default function Home() {
             </h1>
           </div>
           
-          <div className="hidden md:flex space-x-6 lg:space-x-8 text-base lg:text-lg font-bold">
-            <Link href="#home" className="hover:text-[var(--neon-green)] transition duration-300">HOME</Link>
-            <Link href="#ishyango" className="hover:text-[var(--neon-green)] transition duration-300">ISHYANGO.AI</Link>
-            <Link href="#projects" className="hover:text-[var(--neon-green)] transition duration-300">PROJECTS</Link>
-            <Link href="#blog" className="hover:text-[var(--neon-green)] transition duration-300">AI NEWS</Link>
-            <Link href="#about" className="hover:text-[var(--neon-green)] transition duration-300">ABOUT</Link>
+          <div className="hidden md:flex items-center text-base lg:text-lg font-bold">
+            <Link href="#home" className="hover:text-[var(--neon-green)] transition duration-300 mr-6 lg:mr-8">HOME</Link>
+            <Link href="#ishyango" className="hover:text-[var(--neon-green)] transition duration-300 mr-6 lg:mr-8">ISHYANGO.AI</Link>
+            <Link href="#projects" className="hover:text-[var(--neon-green)] transition duration-300 mr-6 lg:mr-8">PROJECTS</Link>
+            <Link href="#blog" className="hover:text-[var(--neon-green)] transition duration-300 mr-6 lg:mr-8">AI NEWS</Link>
+            <Link href="#about" className="hover:text-[var(--neon-green)] transition duration-300 mr-6 lg:mr-8">ABOUT</Link>
             <Link href="#contact" className="hover:text-[var(--neon-green)] transition duration-300">CONTACT</Link>
           </div>
           
