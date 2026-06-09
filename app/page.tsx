@@ -68,7 +68,7 @@ export default function Home() {
             </p>
 
             <div className="flex flex-wrap justify-center gap-3 md:gap-4">
-              <Link href="#ishyango" className="glass-card px-6 md:px-8 py-3 md:py-4 rounded bg-[var(--neon-green)] text-[var(--dark-bg)] font-bold hover:shadow-lg hover:shadow-[var(--glow-green)] transition duration-300 text-sm md:text-base">
+              <Link href="#ishyango" className="glass-card px-6 md:px-8 py-3 md:py-4 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] font-bold hover:shadow-lg hover:shadow-[var(--glow-green)] transition duration-300 text-sm md:text-base">
                 <i className="fas fa-rocket mr-2"></i>Ishyango.AI
               </Link>
               <Link href="#projects" className="glass-card px-6 md:px-8 py-3 md:py-4 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] transition duration-300 text-sm md:text-base">
