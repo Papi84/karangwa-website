@@ -105,11 +105,11 @@ export default function Home() {
                   Ancient wisdom meets modern AI.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
-                  <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-white rounded text-xs md:text-sm border border-[var(--neon-green)]">Tauri</span>
-                  <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-white rounded text-xs md:text-sm border border-[var(--neon-green)]">Rust</span>
-                  <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-white rounded text-xs md:text-sm border border-[var(--neon-green)]">React</span>
-                  <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-white rounded text-xs md:text-sm border border-[var(--neon-green)]">AI/ML</span>
-                  <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-white rounded text-xs md:text-sm border border-[var(--neon-green)]">SQLite</span>
+                  <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-xs md:text-sm border border-[var(--neon-green)]">Tauri</span>
+                  <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-xs md:text-sm border border-[var(--neon-green)]">Rust</span>
+                  <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-xs md:text-sm border border-[var(--neon-green)]">React</span>
+                  <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-xs md:text-sm border border-[var(--neon-green)]">AI/ML</span>
+                  <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-xs md:text-sm border border-[var(--neon-green)]">SQLite</span>
                 </div>
                 <Link href="#contact" className="glass-card px-6 py-3 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] font-bold inline-block hover:shadow-lg hover:shadow-[var(--glow-green)] transition duration-300 text-sm md:text-base">
                   <i className="fas fa-envelope mr-2"></i>Join Waitlist
@@ -149,9 +149,9 @@ export default function Home() {
                 Git-like learning companion for PDFs. Track understanding, make notes, retain knowledge from technical books.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-white rounded text-xs md:text-sm border border-[var(--neon-green)]">Tauri</span>
-                <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-white rounded text-xs md:text-sm border border-[var(--neon-green)]">Rust</span>
-                <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-white rounded text-xs md:text-sm border border-[var(--neon-green)]">AI</span>
+                <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-xs md:text-sm border border-[var(--neon-green)]">Tauri</span>
+                <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-xs md:text-sm border border-[var(--neon-green)]">Rust</span>
+                <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-xs md:text-sm border border-[var(--neon-green)]">AI</span>
               </div>
               <Link href="#ishyango" className="text-[var(--neon-blue)] hover:underline text-sm md:text-base">
                 <i className="fas fa-arrow-right mr-2"></i>Learn More
@@ -168,9 +168,9 @@ export default function Home() {
                 Intelligent research assistant. Chat with PDFs, get AI summaries, extract key insights from academic papers.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-white rounded text-xs md:text-sm border border-[var(--neon-green)]">React</span>
-                <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-white rounded text-xs md:text-sm border border-[var(--neon-green)]">Node.js</span>
-                <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-white rounded text-xs md:text-sm border border-[var(--neon-green)]">Qwen API</span>
+                <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-xs md:text-sm border border-[var(--neon-green)]">React</span>
+                <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-xs md:text-sm border border-[var(--neon-green)]">Node.js</span>
+                <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-xs md:text-sm border border-[var(--neon-green)]">Qwen API</span>
               </div>
               <Link href="https://github.com/Papi84" target="_blank" className="text-[var(--neon-blue)] hover:underline text-sm md:text-base">
                 <i className="fab fa-github mr-2"></i>View Code
@@ -187,8 +187,8 @@ export default function Home() {
                 C++ simulation of digital logic gates. Build circuits, test truth tables, understand computer architecture.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-white rounded text-xs md:text-sm border border-[var(--neon-green)]">C++</span>
-                <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-white rounded text-xs md:text-sm border border-[var(--neon-green)]">Digital Logic</span>
+                <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-xs md:text-sm border border-[var(--neon-green)]">C++</span>
+                <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-xs md:text-sm border border-[var(--neon-green)]">Digital Logic</span>
               </div>
               <Link href="https://github.com/Papi84" target="_blank" className="text-[var(--neon-blue)] hover:underline text-sm md:text-base">
                 <i className="fab fa-github mr-2"></i>View Code

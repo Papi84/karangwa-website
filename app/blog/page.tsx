@@ -79,7 +79,7 @@ export default function Blog() {
                 <p className="text-gray-300 text-sm md:text-base mb-4">{post.excerpt}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {post.tags.map((tag) => (
-                    <span key={tag} className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-white rounded text-xs md:text-sm border border-[var(--neon-green)]">
+                    <span key={tag} className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-xs md:text-sm border border-[var(--neon-green)]">
                       {tag}
                     </span>
                   ))}

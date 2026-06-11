@@ -37,9 +37,9 @@ export default function WhyIshyangoAI() {
           {/* Header */}
           <header className="mb-12 text-center">
             <div className="flex flex-wrap justify-center gap-2 mb-6">
-              <span className="px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-white rounded text-sm border border-[var(--neon-green)]">Ishyango.AI</span>
-              <span className="px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-white rounded text-sm border border-[var(--neon-green)]">EdTech</span>
-              <span className="px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-white rounded text-sm border border-[var(--neon-green)]">AI</span>
+              <span className="px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-sm border border-[var(--neon-green)]">Ishyango.AI</span>
+              <span className="px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-sm border border-[var(--neon-green)]">EdTech</span>
+              <span className="px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-sm border border-[var(--neon-green)]">AI</span>
             </div>
             <h1 className="text-3xl md:text-5xl font-bold mb-6 neon-text">
               Why I'm Building Ishyango.AI
