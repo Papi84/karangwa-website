@@ -72,7 +72,7 @@ export default function WhyIshyangoAI() {
               </h2>
 
               <p className="text-gray-300 text-lg mb-6 leading-relaxed">
-                As a Computer Science student, I read <strong>hundreds of PDFs</strong> every semester. Technical books, research papers, documentation — the content never ends.
+                As a <strong>lifelong</strong> Computer Science student, I read <strong>hundreds of PDFs</strong> every semester. Technical books, research papers, documentation — the content never ends.
               </p>
 
               <p className="text-gray-300 text-lg mb-6 leading-relaxed">

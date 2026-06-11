@@ -44,7 +44,7 @@ export default function Blog() {
 
       {/* Blog Header */}
       <section className="pt-32 pb-16 px-4">
-        <div className="container mx-auto max-w-5xl text-center">
+        <div className="container mx-auto max-w-5xl text-center flex flex-col items-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="neon-text">K(now).AI</span>
           </h1>
