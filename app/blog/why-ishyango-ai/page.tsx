@@ -33,7 +33,7 @@ export default function WhyIshyangoAI() {
 
       {/* Article */}
       <article className="pt-32 pb-16 px-4">
-        <div className="container mx-auto max-w-4xl">
+        <div className="container mx-auto max-w-5xl">
           {/* Header */}
           <header className="mb-12 text-center">
             <div className="flex flex-wrap justify-center gap-2 mb-6">
@@ -55,14 +55,14 @@ export default function WhyIshyangoAI() {
           </header>
 
           {/* Content */}
-          <div className="glass-card p-6 md:p-12 mb-12">
+          <div className="glass-card p-8 md:p-16 lg:p-20 mb-12">
             <div className="prose prose-lg max-w-none">
               {/* Introduction */}
-              <p className="text-gray-300 text-lg mb-6 leading-relaxed">
+              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed">
                 <span className="text-4xl md:text-6xl font-bold neon-text float-left mr-4 mt-2">F</span>orty thousand years ago, somewhere in the highlands overlooking the Congo River, an unknown African carved mathematical notches into a baboon fibula. This bone tool would become known as the <strong>Ishango Bone</strong> — one of the oldest mathematical artifacts ever discovered.
               </p>
 
-              <p className="text-gray-300 text-lg mb-6 leading-relaxed">
+              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed">
                 Today, I'm building an AI-powered learning tool inspired by that ancient innovation. This is the story of why.
               </p>
 
@@ -71,15 +71,15 @@ export default function WhyIshyangoAI() {
                 <i className="fas fa-exclamation-triangle mr-3"></i>The Problem
               </h2>
 
-              <p className="text-gray-300 text-lg mb-6 leading-relaxed">
+              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed">
                 As a <strong>lifelong</strong> Computer Science student, I read <strong>hundreds of PDFs</strong> every semester. Technical books, research papers, documentation — the content never ends.
               </p>
 
-              <p className="text-gray-300 text-lg mb-6 leading-relaxed">
+              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed">
                 But here's what I noticed:
               </p>
 
-              <ul className="text-gray-300 text-lg mb-6 space-y-4">
+              <ul className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 space-y-4">
                 <li className="flex items-start">
                   <i className="fas fa-times text-red-500 mr-3 mt-1"></i>
                   <span>I'd highlight important passages, then <strong>forget why I highlighted them</strong></span>
@@ -98,7 +98,7 @@ export default function WhyIshyangoAI() {
                 </li>
               </ul>
 
-              <p className="text-gray-300 text-lg mb-6 leading-relaxed">
+              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed">
                 Sound familiar? You're not alone. This is the <strong>universal student struggle</strong>.
               </p>
 
@@ -107,7 +107,7 @@ export default function WhyIshyangoAI() {
                 <i className="fas fa-lightbulb mr-3"></i>The Inspiration
               </h2>
 
-              <p className="text-gray-300 text-lg mb-6 leading-relaxed">
+              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed">
                 The Ishango Bone wasn't just a counting tool. It was a <strong>knowledge preservation system</strong>. Someone, 40,000 years ago, looked at the patterns of the universe and said: <em className="text-[var(--neon-green)]">"I need a way to remember this."</em>
               </p>
 
@@ -119,11 +119,11 @@ export default function WhyIshyangoAI() {
                 </p>
               </div>
 
-              <p className="text-gray-300 text-lg mb-6 leading-relaxed">
+              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed">
                 That's when it hit me: <strong className="text-[var(--neon-green)]">What if we had a modern Ishango Bone?</strong> A tool that:
               </p>
 
-              <ul className="text-gray-300 text-lg mb-6 space-y-4">
+              <ul className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 space-y-4">
                 <li className="flex items-start">
                   <i className="fas fa-check text-[var(--neon-green)] mr-3 mt-1"></i>
                   <span>Tracks your understanding like <strong>git commits</strong></span>
@@ -147,7 +147,7 @@ export default function WhyIshyangoAI() {
                 <i className="fas fa-rocket mr-3"></i>The Vision
               </h2>
 
-              <p className="text-gray-300 text-lg mb-6 leading-relaxed">
+              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed">
                 <strong className="text-[var(--neon-green)]">Ishyango.AI</strong> is that tool. It's a desktop application (built with Tauri, Rust, and React) that:
               </p>
 
@@ -194,11 +194,11 @@ export default function WhyIshyangoAI() {
                 <i className="fas fa-road mr-3"></i>The Journey
               </h2>
 
-              <p className="text-gray-300 text-lg mb-6 leading-relaxed">
+              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed">
                 I'm building this as a <strong>CS student at University of Cape Town</strong>, juggling:
               </p>
 
-              <ul className="text-gray-300 text-lg mb-6 space-y-4">
+              <ul className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 space-y-4">
                 <li className="flex items-start">
                   <i className="fas fa-graduation-cap text-[var(--neon-blue)] mr-3 mt-1"></i>
                   <span>Heavy coursework (Linear Algebra, Combinatorics, DDIA)</span>
@@ -213,7 +213,7 @@ export default function WhyIshyangoAI() {
                 </li>
               </ul>
 
-              <p className="text-gray-300 text-lg mb-6 leading-relaxed">
+              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed">
                 It's not easy. But 40,000 years ago, someone carved mathematical notches into a bone by candlelight (or whatever they used back then). <strong className="text-[var(--neon-green)]">I can code after lectures.</strong>
               </p>
 
@@ -222,11 +222,11 @@ export default function WhyIshyangoAI() {
                 <i className="fas fa-envelope mr-3"></i>Join the Journey
               </h2>
 
-              <p className="text-gray-300 text-lg mb-6 leading-relaxed">
+              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed">
                 I'll be sharing weekly updates about:
               </p>
 
-              <ul className="text-gray-300 text-lg mb-6 space-y-4">
+              <ul className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 space-y-4">
                 <li className="flex items-start">
                   <i className="fas fa-newspaper text-[var(--neon-green)] mr-3 mt-1"></i>
                   <span>AI news & insights (K(now).AI newsletter)</span>
@@ -242,7 +242,7 @@ export default function WhyIshyangoAI() {
               </ul>
 
               <div className="glass-card p-8 my-8 text-center border-2 border-[var(--neon-green)]">
-                <p className="text-gray-300 text-lg mb-6">
+                <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12">
                   <strong>Want to follow along?</strong>
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
@@ -256,7 +256,7 @@ export default function WhyIshyangoAI() {
               </div>
 
               {/* Closing */}
-              <p className="text-gray-300 text-lg mb-6 leading-relaxed text-center italic">
+              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed text-center italic">
                 <i className="fas fa-bone mr-2 text-[var(--neon-green)]"></i>
                 Ancient wisdom meets modern AI.
                 <i className="fas fa-bone ml-2 text-[var(--neon-green)]"></i>
