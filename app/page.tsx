@@ -111,7 +111,7 @@ export default function Home() {
                   <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--neon-green)] rounded text-xs md:text-sm">AI/ML</span>
                   <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--neon-green)] rounded text-xs md:text-sm">SQLite</span>
                 </div>
-                <Link href="#contact" className="glass-card px-6 py-3 rounded bg-[var(--neon-blue)] text-[var(--dark-bg)] font-bold inline-block hover:shadow-lg hover:shadow-[var(--glow-blue)] transition duration-300 text-sm md:text-base">
+                <Link href="#contact" className="glass-card px-6 py-3 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] font-bold inline-block hover:shadow-lg hover:shadow-[var(--glow-green)] transition duration-300 text-sm md:text-base">
                   <i className="fas fa-envelope mr-2"></i>Join Waitlist
                 </Link>
               </div>
@@ -214,7 +214,7 @@ export default function Home() {
                 placeholder="your@email.com"
                 className="flex-1 px-4 py-3 rounded glass-card bg-transparent border border-[var(--neon-green)] text-white placeholder-gray-400 focus:outline-none focus:border-[var(--neon-blue)] text-sm md:text-base"
               />
-              <button type="submit" className="glass-card px-6 py-3 rounded bg-[var(--neon-green)] text-[var(--dark-bg)] font-bold hover:shadow-lg hover:shadow-[var(--glow-green)] transition duration-300 text-sm md:text-base">
+              <button type="submit" className="glass-card px-6 py-3 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] font-bold hover:shadow-lg hover:shadow-[var(--glow-green)] transition duration-300 text-sm md:text-base">
                 <i className="fas fa-paper-plane mr-2"></i>Subscribe
               </button>
             </form>
