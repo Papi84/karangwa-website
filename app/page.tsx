@@ -21,12 +21,12 @@ export default function Home() {
           </div>
           
           <div className="hidden md:flex items-center justify-end flex-1 gap-8 lg:gap-12">
-            <Link href="#home" className="text-lg lg:text-2xl font-extrabold hover:text-[var(--neon-green)] transition duration-300">HOME</Link>
-            <Link href="#ishyango" className="text-lg lg:text-2xl font-extrabold hover:text-[var(--neon-green)] transition duration-300">ISHYANGO.AI</Link>
-            <Link href="#projects" className="text-lg lg:text-2xl font-extrabold hover:text-[var(--neon-green)] transition duration-300">PROJECTS</Link>
-            <Link href="#blog" className="text-lg lg:text-2xl font-extrabold hover:text-[var(--neon-green)] transition duration-300">AI NEWS</Link>
-            <Link href="#about" className="text-lg lg:text-2xl font-extrabold hover:text-[var(--neon-green)] transition duration-300">ABOUT</Link>
-            <Link href="#contact" className="text-lg lg:text-2xl font-extrabold hover:text-[var(--neon-green)] transition duration-300">CONTACT</Link>
+            <Link href="#home" className="text-lg lg:text-2xl font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2">HOME</Link>
+            <Link href="#ishyango" className="text-lg lg:text-2xl font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2">ISHYANGO.AI</Link>
+            <Link href="#projects" className="text-lg lg:text-2xl font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2">PROJECTS</Link>
+            <Link href="#blog" className="text-lg lg:text-2xl font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2">AI NEWS</Link>
+            <Link href="#about" className="text-lg lg:text-2xl font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2">ABOUT</Link>
+            <Link href="#contact" className="text-lg lg:text-2xl font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2">CONTACT</Link>
           </div>
           
           {/* Mobile Menu Button */}
