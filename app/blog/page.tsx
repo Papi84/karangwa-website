@@ -103,16 +103,20 @@ export default function Blog() {
               Weekly AI news & insights for students and builders. 
               EdTech focus, technical deep-dives, and building journey updates.
             </p>
-            <form className="flex flex-col md:flex-row gap-3 md:gap-4">
+            <form action="mailto:stevegoharder@gmail.com?subject=Subscribe to K(now).AI Newsletter" method="post" enctype="text/plain" className="flex flex-col md:flex-row gap-3 md:gap-4">
               <input
                 type="email"
                 placeholder="your@email.com"
                 className="flex-1 px-4 py-3 rounded glass-card bg-transparent border border-[var(--neon-green)] text-white placeholder-gray-400 focus:outline-none focus:border-[var(--neon-blue)] text-sm md:text-base"
+                required
               />
               <button type="submit" className="glass-card px-6 py-3 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] font-bold hover:shadow-lg hover:shadow-[var(--glow-green)] transition duration-300 text-sm md:text-base">
                 <i className="fas fa-paper-plane mr-2"></i>Subscribe
               </button>
             </form>
+            <p className="text-xs md:text-sm text-gray-400 mt-4">
+              <i className="fas fa-info-circle mr-2"></i>Clicking Subscribe will open your email client. Or email me directly: <a href="mailto:stevegoharder@gmail.com" className="text-[var(--neon-green)] hover:underline">stevegoharder@gmail.com</a>
+            </p>
             <p className="text-xs md:text-sm text-gray-400 mt-4">
               <i className="fas fa-lock mr-2"></i>No spam. Unsubscribe anytime.
             </p>

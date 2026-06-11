@@ -272,13 +272,16 @@ export default function WhyIshyangoAI() {
                   <strong className="text-white text-xl md:text-2xl">Want to follow along?</strong>
                 </p>
                 <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-6">
-                  <Link href="/blog" className="glass-card px-8 py-4 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] font-bold transition duration-300 text-base md:text-lg whitespace-nowrap">
+                  <a href="mailto:stevegoharder@gmail.com?subject=Subscribe to K(now).AI Newsletter" className="glass-card px-8 py-4 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] font-bold transition duration-300 text-base md:text-lg whitespace-nowrap">
                     <i className="fas fa-envelope mr-2"></i>Subscribe to Newsletter
-                  </Link>
+                  </a>
                   <Link href="/#ishyango" className="glass-card px-8 py-4 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] font-bold transition duration-300 text-base md:text-lg whitespace-nowrap">
                     <i className="fas fa-rocket mr-2"></i>Join Ishyango.AI Waitlist
                   </Link>
                 </div>
+                <p className="text-xs md:text-sm text-gray-400 mt-4">
+                  <i className="fas fa-info-circle mr-2"></i>Or email me directly: <a href="mailto:stevegoharder@gmail.com" className="text-[var(--neon-green)] hover:underline">stevegoharder@gmail.com</a>
+                </p>
               </div>
 
               {/* Closing */}
