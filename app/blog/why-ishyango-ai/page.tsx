@@ -219,7 +219,7 @@ export default function WhyIshyangoAI() {
               </h2>
 
               <p className="text-gray-300 text-lg md:text-xl mb-6 md:mb-8 leading-relaxed md:leading-loose">
-                I'm building this as a <strong className="text-white">CS student at University of Cape Town</strong>, juggling:
+                I'm building this as a <strong className="text-white">lifelong Computer Science student</strong>, juggling:
               </p>
 
               <ul className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 space-y-4 md:space-y-6">
@@ -271,11 +271,11 @@ export default function WhyIshyangoAI() {
                 <p className="text-gray-300 text-lg md:text-xl mb-6 md:mb-8">
                   <strong className="text-white text-xl md:text-2xl">Want to follow along?</strong>
                 </p>
-                <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-                  <Link href="/blog" className="glass-card px-6 md:px-8 py-4 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] font-bold transition duration-300 text-base md:text-lg">
+                <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-6">
+                  <Link href="/blog" className="glass-card px-8 py-4 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] font-bold transition duration-300 text-base md:text-lg whitespace-nowrap">
                     <i className="fas fa-envelope mr-2"></i>Subscribe to Newsletter
                   </Link>
-                  <Link href="/#ishyango" className="glass-card px-6 md:px-8 py-4 rounded bg-[var(--neon-green)] text-[var(--dark-bg)] font-bold hover:shadow-lg hover:shadow-[var(--glow-green)] transition duration-300 text-base md:text-lg">
+                  <Link href="/#ishyango" className="glass-card px-8 py-4 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] font-bold transition duration-300 text-base md:text-lg whitespace-nowrap">
                     <i className="fas fa-rocket mr-2"></i>Join Ishyango.AI Waitlist
                   </Link>
                 </div>
