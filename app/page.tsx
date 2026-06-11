@@ -10,7 +10,7 @@ export default function Home() {
       
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 glass-card mx-4 mt-4 md:mx-8">
-        <div className="container mx-auto px-4 py-3 flex justify-between items-center flex-wrap gap-2">
+        <div className="container mx-auto px-4 py-3 flex justify-between items-center flex-wrap gap-4">
           <div className="flex items-center">
             <div className="mr-3">
               <i className="fas fa-code text-2xl neon-text"></i>
