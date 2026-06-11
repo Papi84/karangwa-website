@@ -32,241 +32,267 @@ export default function WhyIshyangoAI() {
       </nav>
 
       {/* Article */}
-      <article className="pt-32 pb-16 px-4">
-        <div className="container mx-auto max-w-5xl">
+      <article className="pt-40 pb-20 px-4 md:px-8">
+        <div className="container mx-auto max-w-4xl">
+          
           {/* Header */}
-          <header className="mb-12 text-center">
-            <div className="flex flex-wrap justify-center gap-2 mb-6">
-              <span className="px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-sm border border-[var(--neon-green)]">Ishyango.AI</span>
-              <span className="px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-sm border border-[var(--neon-green)]">EdTech</span>
-              <span className="px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-sm border border-[var(--neon-green)]">AI</span>
+          <header className="text-center mb-16 md:mb-24">
+            <div className="flex flex-wrap justify-center gap-3 mb-8">
+              <span className="px-4 py-2 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded-full text-sm font-bold border border-[var(--neon-green)]">Ishyango.AI</span>
+              <span className="px-4 py-2 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded-full text-sm font-bold border border-[var(--neon-green)]">EdTech</span>
+              <span className="px-4 py-2 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded-full text-sm font-bold border border-[var(--neon-green)]">AI</span>
             </div>
-            <h1 className="text-3xl md:text-5xl font-bold mb-6 neon-text">
+            
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-8 neon-text leading-tight">
               Why I'm Building Ishyango.AI
             </h1>
-            <p className="text-lg text-gray-400 mb-4">
+            
+            <p className="text-lg md:text-xl text-gray-400 mb-6 md:mb-8 max-w-2xl mx-auto px-4">
               The story behind the 40,000-year-old bone that inspired an AI tool for students
             </p>
-            <div className="flex justify-center items-center gap-4 text-sm text-gray-500">
-              <span><i className="fas fa-calendar mr-2"></i>June 11, 2026</span>
-              <span><i className="fas fa-clock mr-2"></i>5 min read</span>
-              <span><i className="fas fa-user mr-2"></i>Karangwa Abubakar</span>
+            
+            <div className="flex flex-wrap justify-center items-center gap-6 text-sm text-gray-500">
+              <span className="flex items-center">
+                <i className="fas fa-calendar mr-2"></i>
+                June 11, 2026
+              </span>
+              <span className="flex items-center">
+                <i className="fas fa-clock mr-2"></i>
+                5 min read
+              </span>
+              <span className="flex items-center">
+                <i className="fas fa-user mr-2"></i>
+                Karangwa Abubakar
+              </span>
             </div>
           </header>
 
-          {/* Content */}
-          <div className="glass-card p-8 md:p-16 lg:p-20 mb-12">
-            <div className="prose prose-lg max-w-none">
+          {/* Content Card */}
+          <div className="glass-card p-8 md:p-12 lg:p-16 mb-12">
+            <div className="prose prose-lg md:prose-xl max-w-none">
+              
               {/* Introduction */}
-              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed">
-                <span className="text-4xl md:text-6xl font-bold neon-text float-left mr-4 mt-2">F</span>orty thousand years ago, somewhere in the highlands overlooking the Congo River, an unknown African carved mathematical notches into a baboon fibula. This bone tool would become known as the <strong>Ishango Bone</strong> — one of the oldest mathematical artifacts ever discovered.
+              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed md:leading-loose">
+                <span className="text-5xl md:text-7xl font-bold neon-text float-left mr-4 md:mr-6 mt-2 md:mt-4">F</span>orty thousand years ago, somewhere in the highlands overlooking the Congo River, an unknown African carved mathematical notches into a baboon fibula. This bone tool would become known as the <strong className="text-white">Ishango Bone</strong> — one of the oldest mathematical artifacts ever discovered.
               </p>
 
-              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed">
+              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed md:leading-loose">
                 Today, I'm building an AI-powered learning tool inspired by that ancient innovation. This is the story of why.
               </p>
 
               {/* The Problem */}
-              <h2 className="text-2xl md:text-3xl font-bold mb-6 mt-12 neon-blue">
-                <i className="fas fa-exclamation-triangle mr-3"></i>The Problem
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 md:mb-8 mt-12 md:mt-16 neon-blue flex items-center">
+                <i className="fas fa-exclamation-triangle mr-3 md:mr-4"></i>
+                The Problem
               </h2>
 
-              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed">
-                As a <strong>lifelong</strong> Computer Science student, I read <strong>hundreds of PDFs</strong> every semester. Technical books, research papers, documentation — the content never ends.
+              <p className="text-gray-300 text-lg md:text-xl mb-6 md:mb-8 leading-relaxed md:leading-loose">
+                As a <strong className="text-white">lifelong</strong> Computer Science student, I read <strong className="text-white">hundreds of PDFs</strong> every semester. Technical books, research papers, documentation — the content never ends.
               </p>
 
-              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed">
+              <p className="text-gray-300 text-lg md:text-xl mb-6 md:mb-8 leading-relaxed md:leading-loose">
                 But here's what I noticed:
               </p>
 
-              <ul className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 space-y-4">
+              <ul className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 space-y-4 md:space-y-6">
                 <li className="flex items-start">
-                  <i className="fas fa-times text-red-500 mr-3 mt-1"></i>
-                  <span>I'd highlight important passages, then <strong>forget why I highlighted them</strong></span>
+                  <i className="fas fa-times text-red-500 mr-4 mt-1 flex-shrink-0"></i>
+                  <span>I'd highlight important passages, then <strong className="text-white">forget why I highlighted them</strong></span>
                 </li>
                 <li className="flex items-start">
-                  <i className="fas fa-times text-red-500 mr-3 mt-1"></i>
-                  <span>My notes were <strong>scattered across notebooks, apps, and sticky notes</strong></span>
+                  <i className="fas fa-times text-red-500 mr-4 mt-1 flex-shrink-0"></i>
+                  <span>My notes were <strong className="text-white">scattered across notebooks, apps, and sticky notes</strong></span>
                 </li>
                 <li className="flex items-start">
-                  <i className="fas fa-times text-red-500 mr-3 mt-1"></i>
-                  <span>I couldn't <strong>connect ideas across different papers</strong></span>
+                  <i className="fas fa-times text-red-500 mr-4 mt-1 flex-shrink-0"></i>
+                  <span>I couldn't <strong className="text-white">connect ideas across different papers</strong></span>
                 </li>
                 <li className="flex items-start">
-                  <i className="fas fa-times text-red-500 mr-3 mt-1"></i>
-                  <span>I spent more time <strong>organizing than actually learning</strong></span>
+                  <i className="fas fa-times text-red-500 mr-4 mt-1 flex-shrink-0"></i>
+                  <span>I spent more time <strong className="text-white">organizing than actually learning</strong></span>
                 </li>
               </ul>
 
-              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed">
-                Sound familiar? You're not alone. This is the <strong>universal student struggle</strong>.
+              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed md:leading-loose">
+                Sound familiar? You're not alone. This is the <strong className="text-white">universal student struggle</strong>.
               </p>
 
               {/* The Inspiration */}
-              <h2 className="text-2xl md:text-3xl font-bold mb-6 mt-12 neon-blue">
-                <i className="fas fa-lightbulb mr-3"></i>The Inspiration
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 md:mb-8 mt-12 md:mt-16 neon-blue flex items-center">
+                <i className="fas fa-lightbulb mr-3 md:mr-4"></i>
+                The Inspiration
               </h2>
 
-              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed">
-                The Ishango Bone wasn't just a counting tool. It was a <strong>knowledge preservation system</strong>. Someone, 40,000 years ago, looked at the patterns of the universe and said: <em className="text-[var(--neon-green)]">"I need a way to remember this."</em>
+              <p className="text-gray-300 text-lg md:text-xl mb-6 md:mb-8 leading-relaxed md:leading-loose">
+                The Ishango Bone wasn't just a counting tool. It was a <strong className="text-white">knowledge preservation system</strong>. Someone, 40,000 years ago, looked at the patterns of the universe and said: <em className="text-[var(--neon-green)]">"I need a way to remember this."</em>
               </p>
 
-              <div className="glass-card p-6 my-8 border-l-4 border-[var(--neon-green)]">
-                <p className="text-gray-300 text-lg italic">
-                  <i className="fas fa-quote-left mr-2 text-[var(--neon-green)]"></i>
-                  The Ishango bone tracked lunar phases, mathematical sequences, and counting systems. It was a <strong>Git-like version control system for knowledge</strong> — tracking insights across time.
-                  <i className="fas fa-quote-right ml-2 text-[var(--neon-green)]"></i>
+              {/* Quote Box */}
+              <div className="glass-card p-6 md:p-8 my-8 md:my-12 border-l-4 border-[var(--neon-green)] bg-opacity-30">
+                <p className="text-gray-300 text-lg md:text-xl italic leading-relaxed">
+                  <i className="fas fa-quote-left mr-3 text-[var(--neon-green)]"></i>
+                  The Ishango bone tracked lunar phases, mathematical sequences, and counting systems. It was a <strong className="text-white">Git-like version control system for knowledge</strong> — tracking insights across time.
+                  <i className="fas fa-quote-right ml-3 text-[var(--neon-green)]"></i>
                 </p>
               </div>
 
-              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed">
-                That's when it hit me: <strong className="text-[var(--neon-green)]">What if we had a modern Ishango Bone?</strong> A tool that:
+              <p className="text-gray-300 text-lg md:text-xl mb-6 md:mb-8 leading-relaxed md:leading-loose">
+                That's when it hit me: <strong className="text-[var(--neon-green)] text-xl md:text-2xl">What if we had a modern Ishango Bone?</strong> A tool that:
               </p>
 
-              <ul className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 space-y-4">
+              <ul className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 space-y-4 md:space-y-6">
                 <li className="flex items-start">
-                  <i className="fas fa-check text-[var(--neon-green)] mr-3 mt-1"></i>
-                  <span>Tracks your understanding like <strong>git commits</strong></span>
+                  <i className="fas fa-check text-[var(--neon-green)] mr-4 mt-1 flex-shrink-0 text-xl"></i>
+                  <span>Tracks your understanding like <strong className="text-white">git commits</strong></span>
                 </li>
                 <li className="flex items-start">
-                  <i className="fas fa-check text-[var(--neon-green)] mr-3 mt-1"></i>
-                  <span>Makes <strong>color-coded notes</strong> (red = critical, green = key insight)</span>
+                  <i className="fas fa-check text-[var(--neon-green)] mr-4 mt-1 flex-shrink-0 text-xl"></i>
+                  <span>Makes <strong className="text-white">color-coded notes</strong> (red = critical, green = key insight)</span>
                 </li>
                 <li className="flex items-start">
-                  <i className="fas fa-check text-[var(--neon-green)] mr-3 mt-1"></i>
-                  <span>Uses <strong>AI to summarize and connect concepts</strong></span>
+                  <i className="fas fa-check text-[var(--neon-green)] mr-4 mt-1 flex-shrink-0 text-xl"></i>
+                  <span>Uses <strong className="text-white">AI to summarize and connect concepts</strong></span>
                 </li>
                 <li className="flex items-start">
-                  <i className="fas fa-check text-[var(--neon-green)] mr-3 mt-1"></i>
-                  <span>Builds a <strong>knowledge graph across all your PDFs</strong></span>
+                  <i className="fas fa-check text-[var(--neon-green)] mr-4 mt-1 flex-shrink-0 text-xl"></i>
+                  <span>Builds a <strong className="text-white">knowledge graph across all your PDFs</strong></span>
                 </li>
               </ul>
 
               {/* The Vision */}
-              <h2 className="text-2xl md:text-3xl font-bold mb-6 mt-12 neon-blue">
-                <i className="fas fa-rocket mr-3"></i>The Vision
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 md:mb-8 mt-12 md:mt-16 neon-blue flex items-center">
+                <i className="fas fa-rocket mr-3 md:mr-4"></i>
+                The Vision
               </h2>
 
-              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed">
-                <strong className="text-[var(--neon-green)]">Ishyango.AI</strong> is that tool. It's a desktop application (built with Tauri, Rust, and React) that:
+              <p className="text-gray-300 text-lg md:text-xl mb-6 md:mb-8 leading-relaxed md:leading-loose">
+                <strong className="text-[var(--neon-green)] text-xl">Ishyango.AI</strong> is that tool. It's a desktop application (built with Tauri, Rust, and React) that:
               </p>
 
-              <div className="grid md:grid-cols-2 gap-6 my-8">
-                <div className="glass-card p-6">
-                  <h3 className="text-xl font-bold mb-3 neon-blue">
-                    <i className="fas fa-book-open mr-2"></i>Read Naturally
+              {/* Feature Cards */}
+              <div className="grid md:grid-cols-2 gap-6 md:gap-8 my-8 md:my-12">
+                <div className="glass-card p-6 md:p-8 hover:transform hover:-translate-y-2 transition duration-300">
+                  <h3 className="text-xl md:text-2xl font-bold mb-4 neon-blue flex items-center">
+                    <i className="fas fa-book-open mr-3"></i>
+                    Read Naturally
                   </h3>
-                  <p className="text-gray-300">
+                  <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                     Just read PDFs like normal. Select text to capture insights. No friction, no interruption.
                   </p>
                 </div>
 
-                <div className="glass-card p-6">
-                  <h3 className="text-xl font-bold mb-3 neon-blue">
-                    <i className="fas fa-code-branch mr-2"></i>Git-like Commits
+                <div className="glass-card p-6 md:p-8 hover:transform hover:-translate-y-2 transition duration-300">
+                  <h3 className="text-xl md:text-2xl font-bold mb-4 neon-blue flex items-center">
+                    <i className="fas fa-code-branch mr-3"></i>
+                    Git-like Commits
                   </h3>
-                  <p className="text-gray-300">
+                  <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                     Track your understanding over time. See how your knowledge evolves chapter by chapter.
                   </p>
                 </div>
 
-                <div className="glass-card p-6">
-                  <h3 className="text-xl font-bold mb-3 neon-blue">
-                    <i className="fas fa-brain mr-2"></i>AI Summarization
+                <div className="glass-card p-6 md:p-8 hover:transform hover:-translate-y-2 transition duration-300">
+                  <h3 className="text-xl md:text-2xl font-bold mb-4 neon-blue flex items-center">
+                    <i className="fas fa-brain mr-3"></i>
+                    AI Summarization
                   </h3>
-                  <p className="text-gray-300">
+                  <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                     AI extracts key concepts and connects them across all your reading.
                   </p>
                 </div>
 
-                <div className="glass-card p-6">
-                  <h3 className="text-xl font-bold mb-3 neon-blue">
-                    <i className="fas fa-project-diagram mr-2"></i>Knowledge Graph
+                <div className="glass-card p-6 md:p-8 hover:transform hover:-translate-y-2 transition duration-300">
+                  <h3 className="text-xl md:text-2xl font-bold mb-4 neon-blue flex items-center">
+                    <i className="fas fa-project-diagram mr-3"></i>
+                    Knowledge Graph
                   </h3>
-                  <p className="text-gray-300">
+                  <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                     Visualize connections between concepts across hundreds of PDFs.
                   </p>
                 </div>
               </div>
 
               {/* The Journey */}
-              <h2 className="text-2xl md:text-3xl font-bold mb-6 mt-12 neon-blue">
-                <i className="fas fa-road mr-3"></i>The Journey
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 md:mb-8 mt-12 md:mt-16 neon-blue flex items-center">
+                <i className="fas fa-road mr-3 md:mr-4"></i>
+                The Journey
               </h2>
 
-              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed">
-                I'm building this as a <strong>CS student at University of Cape Town</strong>, juggling:
+              <p className="text-gray-300 text-lg md:text-xl mb-6 md:mb-8 leading-relaxed md:leading-loose">
+                I'm building this as a <strong className="text-white">CS student at University of Cape Town</strong>, juggling:
               </p>
 
-              <ul className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 space-y-4">
+              <ul className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 space-y-4 md:space-y-6">
                 <li className="flex items-start">
-                  <i className="fas fa-graduation-cap text-[var(--neon-blue)] mr-3 mt-1"></i>
+                  <i className="fas fa-graduation-cap text-[var(--neon-blue)] mr-4 mt-1 flex-shrink-0 text-xl"></i>
                   <span>Heavy coursework (Linear Algebra, Combinatorics, DDIA)</span>
                 </li>
                 <li className="flex items-start">
-                  <i className="fas fa-dumbbell text-[var(--neon-blue)] mr-3 mt-1"></i>
+                  <i className="fas fa-dumbbell text-[var(--neon-blue)] mr-4 mt-1 flex-shrink-0 text-xl"></i>
                   <span>Gym training (because gains matter)</span>
                 </li>
                 <li className="flex items-start">
-                  <i className="fas fa-code text-[var(--neon-blue)] mr-3 mt-1"></i>
+                  <i className="fas fa-code text-[var(--neon-blue)] mr-4 mt-1 flex-shrink-0 text-xl"></i>
                   <span>Building in public (this website, weekly blog)</span>
                 </li>
               </ul>
 
-              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed">
-                It's not easy. But 40,000 years ago, someone carved mathematical notches into a bone by candlelight (or whatever they used back then). <strong className="text-[var(--neon-green)]">I can code after lectures.</strong>
+              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed md:leading-loose">
+                It's not easy. But 40,000 years ago, someone carved mathematical notches into a bone by candlelight (or whatever they used back then). <strong className="text-[var(--neon-green)] text-xl">I can code after lectures.</strong>
               </p>
 
               {/* Call to Action */}
-              <h2 className="text-2xl md:text-3xl font-bold mb-6 mt-12 neon-blue">
-                <i className="fas fa-envelope mr-3"></i>Join the Journey
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 md:mb-8 mt-12 md:mt-16 neon-blue flex items-center">
+                <i className="fas fa-envelope mr-3 md:mr-4"></i>
+                Join the Journey
               </h2>
 
-              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed">
+              <p className="text-gray-300 text-lg md:text-xl mb-6 md:mb-8 leading-relaxed md:leading-loose">
                 I'll be sharing weekly updates about:
               </p>
 
-              <ul className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 space-y-4">
+              <ul className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 space-y-4 md:space-y-6">
                 <li className="flex items-start">
-                  <i className="fas fa-newspaper text-[var(--neon-green)] mr-3 mt-1"></i>
+                  <i className="fas fa-newspaper text-[var(--neon-green)] mr-4 mt-1 flex-shrink-0 text-xl"></i>
                   <span>AI news & insights (K(now).AI newsletter)</span>
                 </li>
                 <li className="flex items-start">
-                  <i className="fas fa-hammer text-[var(--neon-green)] mr-3 mt-1"></i>
+                  <i className="fas fa-hammer text-[var(--neon-green)] mr-4 mt-1 flex-shrink-0 text-xl"></i>
                   <span>Building Ishyango.AI (technical deep-dives)</span>
                 </li>
                 <li className="flex items-start">
-                  <i className="fas fa-book text-[var(--neon-green)] mr-3 mt-1"></i>
+                  <i className="fas fa-book text-[var(--neon-green)] mr-4 mt-1 flex-shrink-0 text-xl"></i>
                   <span>Learning journey (CS student life)</span>
                 </li>
               </ul>
 
-              <div className="glass-card p-8 my-8 text-center border-2 border-[var(--neon-green)]">
-                <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12">
-                  <strong>Want to follow along?</strong>
+              {/* CTA Box */}
+              <div className="glass-card p-8 md:p-12 my-8 md:my-12 text-center border-2 border-[var(--neon-green)] bg-opacity-30">
+                <p className="text-gray-300 text-lg md:text-xl mb-6 md:mb-8">
+                  <strong className="text-white text-xl md:text-2xl">Want to follow along?</strong>
                 </p>
-                <div className="flex flex-wrap justify-center gap-4">
-                  <Link href="/#newsletter" className="glass-card px-8 py-4 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] font-bold transition duration-300">
+                <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+                  <Link href="/blog" className="glass-card px-6 md:px-8 py-4 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] font-bold transition duration-300 text-base md:text-lg">
                     <i className="fas fa-envelope mr-2"></i>Subscribe to Newsletter
                   </Link>
-                  <Link href="/#ishyango" className="glass-card px-8 py-4 rounded bg-[var(--neon-green)] text-[var(--dark-bg)] font-bold hover:shadow-lg hover:shadow-[var(--glow-green)] transition duration-300">
+                  <Link href="/#ishyango" className="glass-card px-6 md:px-8 py-4 rounded bg-[var(--neon-green)] text-[var(--dark-bg)] font-bold hover:shadow-lg hover:shadow-[var(--glow-green)] transition duration-300 text-base md:text-lg">
                     <i className="fas fa-rocket mr-2"></i>Join Ishyango.AI Waitlist
                   </Link>
                 </div>
               </div>
 
               {/* Closing */}
-              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed text-center italic">
-                <i className="fas fa-bone mr-2 text-[var(--neon-green)]"></i>
+              <p className="text-gray-300 text-lg md:text-xl mb-8 md:mb-12 leading-relaxed md:leading-loose text-center italic">
+                <i className="fas fa-bone mr-3 text-[var(--neon-green)] text-xl"></i>
                 Ancient wisdom meets modern AI.
-                <i className="fas fa-bone ml-2 text-[var(--neon-green)]"></i>
+                <i className="fas fa-bone ml-3 text-[var(--neon-green)] text-xl"></i>
               </p>
             </div>
           </div>
 
           {/* Back to Blog */}
           <div className="text-center">
-            <Link href="/blog" className="glass-card px-8 py-4 rounded border border-gray-500 text-gray-300 hover:border-[var(--neon-blue)] hover:text-[var(--neon-blue)] transition duration-300 inline-block">
+            <Link href="/blog" className="glass-card px-8 py-4 rounded border border-gray-500 text-gray-300 hover:border-[var(--neon-blue)] hover:text-[var(--neon-blue)] transition duration-300 inline-block text-base md:text-lg">
               <i className="fas fa-arrow-left mr-2"></i>Back to Blog
             </Link>
           </div>
