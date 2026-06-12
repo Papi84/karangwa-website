@@ -331,12 +331,12 @@ export default function WhyIshyangoAI() {
       <footer className="glass-card mx-4 mb-6 md:mb-8">
         <div className="container mx-auto px-4 py-6 text-center">
           {/* Social Media Links */}
-          <div className="flex justify-center gap-6 mb-4">
+          <div className="flex justify-center gap-6 mb-6">
             <a 
               href="https://github.com/Papi84" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white text-2xl transition duration-300"
+              className="text-white hover:text-[var(--neon-green)] text-3xl transition duration-300 transform hover:scale-110"
               aria-label="GitHub"
             >
               <i className="fab fa-github"></i>
@@ -345,7 +345,7 @@ export default function WhyIshyangoAI() {
               href="https://linkedin.com/in/karangwa-papi-9ab80426b/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-[#0A66C2] text-2xl transition duration-300"
+              className="text-white hover:text-[#0A66C2] text-3xl transition duration-300 transform hover:scale-110"
               aria-label="LinkedIn"
             >
               <i className="fab fa-linkedin"></i>
@@ -354,12 +354,20 @@ export default function WhyIshyangoAI() {
               href="https://twitter.com/coolerme" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-[#1DA1F2] text-2xl transition duration-300"
+              className="text-white hover:text-[#1DA1F2] text-3xl transition duration-300 transform hover:scale-110"
               aria-label="Twitter"
             >
               <i className="fab fa-twitter"></i>
             </a>
           </div>
+          
+          <p className="text-gray-400 text-xs md:text-sm mb-2 flex items-center justify-center">
+            <i className="fas fa-code mr-2"></i>
+            Built with <span className="neon-green ml-1">♥</span> by Karangwa Abubakar
+          </p>
+          <p className="text-gray-400 text-xs md:text-sm flex items-center justify-center">
+            © 2026 - Solving problems like a real engineer
+          </p>
           
           <p className="text-gray-400 text-xs md:text-sm mb-2">
             <i className="fas fa-code mr-2"></i>
