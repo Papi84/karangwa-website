@@ -126,12 +126,43 @@ export default function Blog() {
 
       {/* Footer */}
       <footer className="glass-card mx-4 mb-6 md:mb-8">
-        <div className="container mx-auto px-4 py-6 text-center text-gray-400 text-xs md:text-sm">
-          <p>
+        <div className="container mx-auto px-4 py-6 text-center">
+          {/* Social Media Links */}
+          <div className="flex justify-center gap-6 mb-4">
+            <a 
+              href="https://github.com/Papi84" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white text-2xl transition duration-300"
+              aria-label="GitHub"
+            >
+              <i className="fab fa-github"></i>
+            </a>
+            <a 
+              href="https://linkedin.com/in/karangwa-papi-9ab80426b/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-[#0A66C2] text-2xl transition duration-300"
+              aria-label="LinkedIn"
+            >
+              <i className="fab fa-linkedin"></i>
+            </a>
+            <a 
+              href="https://twitter.com/coolerme" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-[#1DA1F2] text-2xl transition duration-300"
+              aria-label="Twitter"
+            >
+              <i className="fab fa-twitter"></i>
+            </a>
+          </div>
+          
+          <p className="text-gray-400 text-xs md:text-sm mb-2">
             <i className="fas fa-code mr-2"></i>
             Built with <span className="neon-green">♥</span> by Karangwa Abubakar
           </p>
-          <p className="mt-2">
+          <p className="text-gray-400 text-xs md:text-sm">
             © 2026 - Solving problems like a real engineer
           </p>
         </div>

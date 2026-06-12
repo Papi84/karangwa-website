@@ -293,8 +293,33 @@ export default function WhyIshyangoAI() {
             </div>
           </div>
 
+          {/* Share Section */}
+          <div className="glass-card p-8 md:p-12 my-8 md:my-12 text-center border-2 border-[var(--neon-green)] bg-opacity-30">
+            <p className="text-gray-300 text-lg md:text-xl mb-6 md:mb-8">
+              <strong className="text-white text-xl md:text-2xl">Liked this article? Share it!</strong>
+            </p>
+            <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+              <a 
+                href="https://twitter.com/intent/tweet?text=Why I'm Building Ishyango.AI - the story behind the 40,000-year-old bone that inspired an AI tool for students&url=https://karangwa.com/blog/why-ishyango-ai&hashtags=AI,EdTech,BuildInPublic,IshyangoAI"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glass-card px-6 md:px-8 py-4 rounded bg-[#1DA1F2] text-white font-bold hover:shadow-lg hover:shadow-[#1DA1F2] transition duration-300 text-base md:text-lg flex items-center"
+              >
+                <i className="fab fa-twitter mr-2"></i>Share on Twitter
+              </a>
+              <a 
+                href="https://www.linkedin.com/sharing/share-offsite/?url=https://karangwa.com/blog/why-ishyango-ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glass-card px-6 md:px-8 py-4 rounded bg-[#0A66C2] text-white font-bold hover:shadow-lg hover:shadow-[#0A66C2] transition duration-300 text-base md:text-lg flex items-center"
+              >
+                <i className="fab fa-linkedin mr-2"></i>Share on LinkedIn
+              </a>
+            </div>
+          </div>
+
           {/* Back to Blog */}
-          <div className="text-center">
+          <div className="text-center mb-12">
             <Link href="/blog" className="glass-card px-8 py-4 rounded border border-gray-500 text-gray-300 hover:border-[var(--neon-blue)] hover:text-[var(--neon-blue)] transition duration-300 inline-block text-base md:text-lg">
               <i className="fas fa-arrow-left mr-2"></i>Back to Blog
             </Link>
@@ -304,12 +329,43 @@ export default function WhyIshyangoAI() {
 
       {/* Footer */}
       <footer className="glass-card mx-4 mb-6 md:mb-8">
-        <div className="container mx-auto px-4 py-6 text-center text-gray-400 text-xs md:text-sm">
-          <p>
+        <div className="container mx-auto px-4 py-6 text-center">
+          {/* Social Media Links */}
+          <div className="flex justify-center gap-6 mb-4">
+            <a 
+              href="https://github.com/Papi84" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white text-2xl transition duration-300"
+              aria-label="GitHub"
+            >
+              <i className="fab fa-github"></i>
+            </a>
+            <a 
+              href="https://linkedin.com/in/karangwa-papi-9ab80426b/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-[#0A66C2] text-2xl transition duration-300"
+              aria-label="LinkedIn"
+            >
+              <i className="fab fa-linkedin"></i>
+            </a>
+            <a 
+              href="https://twitter.com/coolerme" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-[#1DA1F2] text-2xl transition duration-300"
+              aria-label="Twitter"
+            >
+              <i className="fab fa-twitter"></i>
+            </a>
+          </div>
+          
+          <p className="text-gray-400 text-xs md:text-sm mb-2">
             <i className="fas fa-code mr-2"></i>
             Built with <span className="neon-green">♥</span> by Karangwa Abubakar
           </p>
-          <p className="mt-2">
+          <p className="text-gray-400 text-xs md:text-sm">
             © 2026 - Solving problems like a real engineer
           </p>
         </div>
