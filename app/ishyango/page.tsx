@@ -174,41 +174,65 @@ export default function IshyangoPage() {
           </div>
         </div>
       </section>
-
       {/* Download Section */}
       <section className="container mx-auto px-4 py-20">
-        <h2 className="text-4xl font-bold text-white mb-12 text-center">
-          Download
-        </h2>
-        <div className="max-w-2xl mx-auto text-center">
-          <div className="bg-slate-800/50 backdrop-blur-sm p-8 rounded-xl border border-slate-700">
-            <h3 className="text-2xl font-bold text-white mb-4">Linux</h3>
-            <div className="flex gap-4 justify-center mb-6">
-              <span className="bg-purple-600 text-white px-6 py-2 rounded-lg">.deb</span>
-              <span className="bg-purple-600 text-white px-6 py-2 rounded-lg">.AppImage</span>
-            </div>
+        <div className="text-center">
+          <h2 className="text-4xl font-bold text-white mb-4">
+            🚀 Download Ishyango.AI Desktop
+          </h2>
+          <p className="text-xl text-purple-200 mb-8 max-w-2xl mx-auto">
+            Start tracking your learning today. Free and open-source.
+          </p>
+
+          <div className="flex flex-wrap gap-4 justify-center">
             <a
               href="https://github.com/Papi84/ishyango-desktop/releases"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-lg font-semibold transition"
+              className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-lg font-semibold transition flex items-center gap-2"
             >
-              Download on GitHub
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              Linux (.deb)
+            </a>
+
+            <a
+              href="https://github.com/Papi84/ishyango-desktop/releases"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition flex items-center gap-2"
+            >
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4h-13.05M0 12.6h9.75v9.451L0 20.55M10.949 12.6H24V24l-12.9-1.801" />
+              </svg>
+              Windows (.exe)
+            </a>
+
+            <a
+              href="https://github.com/Papi84/ishyango-desktop/releases"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-600 hover:bg-gray-700 text-white px-8 py-4 rounded-lg font-semibold transition flex items-center gap-2"
+            >
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-.8 1.94-.8s.16 1.06-.59 1.91c-.69.79-1.82.7-1.82.7s-.1-1.02.47-1.81" />
+              </svg>
+              macOS (.dmg)
             </a>
           </div>
-          <div className="mt-8 text-gray-400">
-            <p>Windows &amp; macOS versions coming soon!</p>
-            <div className="mt-6 text-left">
-  <h4 className="font-bold mb-2 text-white">Installation (Linux):</h4>
-  <code className="block bg-slate-800 px-4 py-2 rounded text-sm text-purple-300">
-    sudo dpkg -i ishyango-desktop_*.deb
-  </code>
-  <p className="mt-2 text-sm">
-    Or use the .AppImage for a portable version!
-  </p>
-</div>
 
-          </div>
+          <p className="text-sm text-gray-400 mt-4">
+            Also available on{' '}
+            <a
+              href="https://github.com/Papi84/ishyango-desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-purple-400 hover:text-purple-300 underline"
+            >
+              GitHub
+            </a>
+          </p>
         </div>
       </section>
 
