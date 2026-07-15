@@ -1,17 +1,17 @@
 export default function IshyangoPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
-      <div className="mx-auto flex w-full max-w-7xl flex-col px-2 sm:px-4 lg:px-6">
+      <div className="mx-auto flex w-full max-w-6xl flex-col px-3 sm:px-4 lg:px-6">
       {/* Hero Section */}
       <section className="w-full px-2 sm:px-4 lg:px-8 py-16 sm:py-20 lg:py-24">
         <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6">
             🧠 Ishyango.AI
           </h1>
           <p className="text-lg sm:text-xl lg:text-2xl text-purple-200 mb-6 sm:mb-8">
             Git-like Learning Companion for PDFs
           </p>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-300 max-w-2xl mx-auto mb-8 sm:mb-10 lg:mb-12">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-300 max-w-[60ch] mx-auto mb-8 sm:mb-10 lg:mb-12">
             Track your learning, one commit at a time. Just as developers track code changes with Git,
             learners can now track their knowledge journey with Git-like commits.
           </p>
@@ -20,13 +20,13 @@ export default function IshyangoPage() {
               href="https://github.com/Papi84/ishyango-desktop"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto bg-purple-600 hover:bg-purple-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition text-center"
+              className="w-full max-w-xs sm:max-w-none sm:w-auto bg-purple-600 hover:bg-purple-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition text-center"
             >
               View on GitHub
             </a>
             <a
               href="#features"
-              className="w-full sm:w-auto bg-transparent border-2 border-purple-400 text-purple-200 hover:bg-purple-900 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition text-center"
+              className="w-full max-w-xs sm:max-w-none sm:w-auto bg-transparent border-2 border-purple-400 text-purple-200 hover:bg-purple-900 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition text-center"
             >
               Learn More
             </a>
