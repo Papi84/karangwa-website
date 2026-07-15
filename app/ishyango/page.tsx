@@ -2,30 +2,30 @@ export default function IshyangoPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-20">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
         <div className="text-center">
-          <h1 className="text-6xl font-bold text-white mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6">
             🧠 Ishyango.AI
           </h1>
-          <p className="text-2xl text-purple-200 mb-8">
+          <p className="text-lg sm:text-xl lg:text-2xl text-purple-200 mb-6 sm:mb-8">
             Git-like Learning Companion for PDFs
           </p>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-12">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-300 max-w-2xl mx-auto mb-8 sm:mb-10 lg:mb-12">
             Track your learning, one commit at a time. Just as developers track code changes with Git,
             learners can now track their knowledge journey with Git-like commits.
           </p>
-          <div className="flex gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
             <a
               href="https://github.com/Papi84/ishyango-desktop"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-lg font-semibold transition"
+              className="w-full sm:w-auto bg-purple-600 hover:bg-purple-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition text-center"
             >
               View on GitHub
             </a>
             <a
               href="#features"
-              className="bg-transparent border-2 border-purple-400 text-purple-200 hover:bg-purple-900 px-8 py-4 rounded-lg font-semibold transition"
+              className="w-full sm:w-auto bg-transparent border-2 border-purple-400 text-purple-200 hover:bg-purple-900 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition text-center"
             >
               Learn More
             </a>
@@ -34,22 +34,22 @@ export default function IshyangoPage() {
       </section>
 
       {/* Hackathon Badge */}
-      <section className="container mx-auto px-4 py-8">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
         <div className="text-center">
-          <span className="inline-block bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-semibold">
+          <span className="inline-block bg-blue-600 text-white px-4 sm:px-6 py-2 rounded-full text-sm font-semibold">
             🏆 Submitted to Qwen Cloud Hackathon 2026
           </span>
         </div>
       </section>
 
       {/* Problem Section */}
-      <section className="container mx-auto px-4 py-20">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-white mb-8 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 sm:mb-8 text-center">
             The Problem
           </h2>
-          <div className="bg-slate-800/50 backdrop-blur-sm p-8 rounded-xl border border-slate-700">
-            <p className="text-xl text-gray-300 leading-relaxed">
+          <div className="bg-slate-800/50 backdrop-blur-sm p-6 sm:p-8 rounded-xl border border-slate-700">
+            <p className="text-base sm:text-lg lg:text-xl text-gray-300 leading-relaxed">
               Students, researchers, and lifelong learners struggle to retain what they read from PDFs
               and academic papers. Traditional note-taking is scattered, insights are lost across
               multiple documents, and there's no systematic way to track learning progress over time.
@@ -60,16 +60,16 @@ export default function IshyangoPage() {
       </section>
 
       {/* Solution Section */}
-      <section className="container mx-auto px-4 py-20">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-white mb-8 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 sm:mb-8 text-center">
             The Solution
           </h2>
-          <div className="bg-purple-900/50 backdrop-blur-sm p-8 rounded-xl border border-purple-700">
-            <p className="text-xl text-purple-100 leading-relaxed mb-6">
+          <div className="bg-purple-900/50 backdrop-blur-sm p-6 sm:p-8 rounded-xl border border-purple-700">
+            <p className="text-base sm:text-lg lg:text-xl text-purple-100 leading-relaxed mb-4 sm:mb-6">
               Ishyango.AI introduces a revolutionary approach: <strong className="text-white">Git-like commits for learning</strong>.
             </p>
-            <p className="text-xl text-purple-100 leading-relaxed">
+            <p className="text-base sm:text-lg lg:text-xl text-purple-100 leading-relaxed">
               Each text selection from a PDF is saved as a "commit" with full text excerpt, page number,
               timestamp, tags, and notes. This creates a searchable, organized history of learning that
               grows with the user.
@@ -79,11 +79,11 @@ export default function IshyangoPage() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="container mx-auto px-4 py-20">
-        <h2 className="text-4xl font-bold text-white mb-12 text-center">
+      <section id="features" className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 sm:mb-12 text-center">
           Features
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {/* Feature 1 */}
           <div className="bg-slate-800/50 backdrop-blur-sm p-6 rounded-xl border border-slate-700">
             <div className="text-4xl mb-4">📄</div>
@@ -141,12 +141,12 @@ export default function IshyangoPage() {
       </section>
 
       {/* Tech Stack Section */}
-      <section className="container mx-auto px-4 py-20">
-        <h2 className="text-4xl font-bold text-white mb-12 text-center">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 sm:mb-12 text-center">
           Tech Stack
         </h2>
         <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
             <div className="bg-slate-800/50 backdrop-blur-sm p-6 rounded-xl border border-slate-700">
               <h3 className="text-lg font-bold text-purple-400 mb-2">Frontend</h3>
               <p className="text-gray-300">React + TypeScript</p>
@@ -176,16 +176,16 @@ export default function IshyangoPage() {
       </section>
 
       {/* Download Section */}
-      <section className="container mx-auto px-4 py-20">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 text-center">
             🚀 Download Ishyango.AI Desktop
           </h2>
-          <p className="text-lg md:text-xl text-purple-200 mb-8 text-center max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-purple-200 mb-8 text-center max-w-2xl mx-auto">
             Start tracking your learning today. Free and open-source.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center">
             {/* Linux Download */}
             <a
               href="https://github.com/Papi84/ishyango-desktop/releases"
@@ -241,12 +241,12 @@ export default function IshyangoPage() {
       </section>
 
       {/* Footer */}
-      <footer className="container mx-auto px-4 py-12 border-t border-slate-800">
+      <footer className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-slate-800">
         <div className="text-center text-gray-400">
-          <p className="mb-4">
+          <p className="mb-4 text-sm sm:text-base">
             Made with ❤️ by Karangwa for the Qwen Cloud Hackathon 2026
           </p>
-          <div className="flex gap-4 justify-center">
+          <div className="flex flex-wrap gap-4 justify-center">
             <a
               href="https://github.com/Papi84/ishyango-desktop"
               target="_blank"
