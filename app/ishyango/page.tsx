@@ -1,9 +1,10 @@
 export default function IshyangoPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+      <div className="mx-auto flex w-full max-w-7xl flex-col px-2 sm:px-4 lg:px-6">
       {/* Hero Section */}
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
-        <div className="text-center">
+      <section className="w-full px-2 sm:px-4 lg:px-8 py-16 sm:py-20 lg:py-24">
+        <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6">
             🧠 Ishyango.AI
           </h1>
@@ -14,7 +15,7 @@ export default function IshyangoPage() {
             Track your learning, one commit at a time. Just as developers track code changes with Git,
             learners can now track their knowledge journey with Git-like commits.
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+          <div className="flex w-full flex-col sm:w-auto sm:flex-row gap-3 sm:gap-4 justify-center items-center">
             <a
               href="https://github.com/Papi84/ishyango-desktop"
               target="_blank"
@@ -34,7 +35,7 @@ export default function IshyangoPage() {
       </section>
 
       {/* Hackathon Badge */}
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+      <section className="w-full px-2 sm:px-4 lg:px-8 py-6 sm:py-8">
         <div className="text-center">
           <span className="inline-block bg-blue-600 text-white px-4 sm:px-6 py-2 rounded-full text-sm font-semibold">
             🏆 Submitted to Qwen Cloud Hackathon 2026
@@ -43,7 +44,7 @@ export default function IshyangoPage() {
       </section>
 
       {/* Problem Section */}
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+      <section className="w-full px-2 sm:px-4 lg:px-8 py-16 sm:py-20">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 sm:mb-8 text-center">
             The Problem
@@ -60,7 +61,7 @@ export default function IshyangoPage() {
       </section>
 
       {/* Solution Section */}
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+      <section className="w-full px-2 sm:px-4 lg:px-8 py-16 sm:py-20">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 sm:mb-8 text-center">
             The Solution
@@ -79,7 +80,7 @@ export default function IshyangoPage() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+      <section id="features" className="w-full px-2 sm:px-4 lg:px-8 py-16 sm:py-20">
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 sm:mb-12 text-center">
           Features
         </h2>
@@ -141,7 +142,7 @@ export default function IshyangoPage() {
       </section>
 
       {/* Tech Stack Section */}
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+      <section className="w-full px-2 sm:px-4 lg:px-8 py-16 sm:py-20">
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 sm:mb-12 text-center">
           Tech Stack
         </h2>
@@ -176,7 +177,7 @@ export default function IshyangoPage() {
       </section>
 
       {/* Download Section */}
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+      <section className="w-full px-2 sm:px-4 lg:px-8 py-16 sm:py-20">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 text-center">
             🚀 Download Ishyango.AI Desktop
@@ -241,7 +242,7 @@ export default function IshyangoPage() {
       </section>
 
       {/* Footer */}
-      <footer className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-slate-800">
+      <footer className="w-full px-2 sm:px-4 lg:px-8 py-12 border-t border-slate-800">
         <div className="text-center text-gray-400">
           <p className="mb-4 text-sm sm:text-base">
             Made with ❤️ by Karangwa for the Qwen Cloud Hackathon 2026
@@ -266,6 +267,7 @@ export default function IshyangoPage() {
           </div>
         </div>
       </footer>
+      </div>
     </div>
   );
 }
