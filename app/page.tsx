@@ -277,6 +277,32 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="support" className="py-16 md:py-20 px-4">
+        <div className="container mx-auto max-w-3xl">
+          <div className="glass-card p-6 md:p-8 text-center">
+            <i className="fas fa-hand-holding-heart text-4xl md:text-6xl neon-blue mb-4"></i>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">Support This Project</h2>
+            <p className="text-gray-300 mb-6 text-sm md:text-base">If you find these projects useful, consider supporting development.</p>
+
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
+              <a href="https://paypal.me/yourusername" target="_blank" rel="noopener noreferrer" className="glass-card px-6 py-3 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] font-bold transition">
+                Support via PayPal
+              </a>
+
+              <a href="https://patreon.com/yourusername" target="_blank" rel="noopener noreferrer" className="glass-card px-6 py-3 rounded border border-[var(--neon-blue)] text-[var(--neon-blue)] hover:bg-[var(--neon-blue)] hover:text-[var(--dark-bg)] font-bold transition">
+                Become a Patron
+              </a>
+
+              <a href="https://github.com/sponsors/Papi84" target="_blank" rel="noopener noreferrer" className="glass-card px-6 py-3 rounded border border-purple-500 text-purple-300 hover:bg-purple-600 hover:text-white font-bold transition">
+                GitHub Sponsor
+              </a>
+            </div>
+
+            <p className="text-xs text-gray-400 mt-4">Thanks for your support — every contribution helps keep these projects alive.</p>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="glass-card mx-4 mb-6 md:mb-8">
         <div className="container mx-auto px-4 py-6 text-center text-gray-400 text-xs md:text-sm">
