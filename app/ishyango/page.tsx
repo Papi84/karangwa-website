@@ -260,9 +260,12 @@ export default function IshyangoPage() {
             </ul>
 
             <div className="flex justify-center">
-              <button type="button" className="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-lg font-semibold transition">
-                Buy Now
-              </button>
+              <a
+                href="https://buy.stripe.com/xxxxx"
+                className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold"
+              >
+                Buy Now - $29/year
+              </a>
             </div>
           </div>
         </div>
