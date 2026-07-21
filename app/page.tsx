@@ -1,9 +1,9 @@
 'use client';
 
 import MatrixRain from '@/components/MatrixRain';
+import DownloadIshyango from '@/components/DownloadIshyango';
+import NewsletterSignup from '@/components/NewsletterSignup';
 import Link from 'next/link';
-export const dynamic = 'force-static'
-export const revalidate = false
 
 export default function Home() {
   return (
@@ -11,8 +11,8 @@ export default function Home() {
       <MatrixRain />
       
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 glass-card mx-4 mt-4 md:mx-8">
-        <div className="container mx-auto px-4 py-3 flex justify-between items-center flex-wrap gap-4">
+      <nav className="fixed top-0 left-0 right-0 z-50 glass-card mx-0 mt-0 md:mx-4 md:mt-4 md:max-w-[calc(100%-2rem)] md:left-1/2 md:-translate-x-1/2">
+        <div className="container mx-auto px-4 py-3 flex justify-between items-center gap-4">
           <div className="flex items-center">
             <div className="mr-3">
               <i className="fas fa-code text-2xl neon-text"></i>
@@ -22,13 +22,13 @@ export default function Home() {
             </h1>
           </div>
           
-          <div className="hidden md:flex items-center justify-end flex-1 gap-8 lg:gap-12">
-            <Link href="#home" className="text-lg lg:text-2xl font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2">HOME</Link>
-            <Link href="#ishyango" className="text-lg lg:text-2xl font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2">ISHYANGO.AI</Link>
-            <Link href="#projects" className="text-lg lg:text-2xl font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2">PROJECTS</Link>
-            <Link href="#blog" className="text-lg lg:text-2xl font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2">AI NEWS</Link>
-            <Link href="#about" className="text-lg lg:text-2xl font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2">ABOUT</Link>
-            <Link href="#contact" className="text-lg lg:text-2xl font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2">CONTACT</Link>
+          <div className="hidden md:flex items-center justify-end flex-1 gap-4 lg:gap-6 xl:gap-8">
+            <Link href="#home" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">HOME</Link>
+            <Link href="/ishyango" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">ISHYANGO.AI</Link>
+            <Link href="#projects" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">PROJECTS</Link>
+            <Link href="#blog" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">AI NEWS</Link>
+            <Link href="#about" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">ABOUT</Link>
+            <Link href="#contact" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">CONTACT</Link>
           </div>
           
           {/* Mobile Menu Button */}
@@ -40,7 +40,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section id="home" className="min-h-screen flex items-center justify-center pt-20 px-4">
-        <div className="container mx-auto max-w-5xl">
+        <div className="container mx-auto max-w-5xl xl:max-w-6xl 2xl:max-w-7xl">
           <div className="text-center">
             <div className="mb-6 inline-block">
               <div className="glass-card p-4 md:p-6 text-left">
@@ -53,18 +53,18 @@ export default function Home() {
               </div>
             </div>
 
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 md:mb-6">
               <span className="neon-blue">KARANGWA</span>
               <br />
               <span className="neon-text">ABUBAKAR</span>
             </h2>
 
-            <p className="text-base md:text-xl lg:text-2xl mb-6 md:mb-8 text-gray-300">
+            <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl mb-6 md:mb-8 text-gray-300">
               <i className="fas fa-brain mr-2 neon-text"></i>
               AI in Education + Builder
             </p>
 
-            <p className="text-sm md:text-lg mb-8 md:mb-12 text-gray-400 max-w-2xl mx-auto px-4">
+            <p className="text-sm md:text-lg xl:text-xl mb-8 md:mb-12 text-gray-400 max-w-3xl mx-auto px-4">
               CS Student @ UCT building tools that help students learn better. 
               Currently working on <span className="neon-blue">Ishyango.AI</span> - a Git-like learning companion for PDFs.
             </p>
@@ -85,15 +85,15 @@ export default function Home() {
       </section>
 
       {/* Ishyango.AI Featured Section */}
-      <section id="ishyango" className="py-16 md:py-20 px-4">
-        <div className="container mx-auto max-w-5xl">
-          <h2 className="text-2xl md:text-4xl font-bold text-center mb-4">
+      <section id="ishyango" className="py-16 md:py-20 xl:py-28 px-4">
+        <div className="container mx-auto max-w-5xl xl:max-w-6xl 2xl:max-w-7xl">
+          <h2 className="text-2xl md:text-4xl xl:text-5xl font-bold text-center mb-4">
             <span className="glitch neon-text" data-text="ISHYANGO.AI">ISHYANGO.AI</span>
           </h2>
           <p className="text-center text-gray-400 mb-8 md:mb-12 text-sm md:text-base">Git-like Learning Companion for PDFs</p>
 
           <div className="glass-card p-4 md:p-8">
-            <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
+            <div className="grid md:grid-cols-2 xl:grid-cols-2 gap-6 md:gap-8 xl:gap-12 items-center">
               <div>
                 <div className="text-4xl md:text-6xl mb-4">🦴</div>
                 <h3 className="text-xl md:text-2xl font-bold mb-4 neon-blue">The Vision</h3>
@@ -133,14 +133,16 @@ export default function Home() {
         </div>
       </section>
 
+      <DownloadIshyango />
+
       {/* Projects Section */}
-      <section id="projects" className="py-16 md:py-20 px-4">
-        <div className="container mx-auto max-w-5xl">
-          <h2 className="text-2xl md:text-4xl font-bold text-center mb-12 md:mb-16">
+      <section id="projects" className="py-16 md:py-20 xl:py-28 px-4">
+        <div className="container mx-auto max-w-5xl xl:max-w-6xl 2xl:max-w-7xl">
+          <h2 className="text-2xl md:text-4xl xl:text-5xl font-bold text-center mb-12 md:mb-16">
             <span className="glitch neon-text" data-text="PROJECTS">PROJECTS</span>
           </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 md:gap-8 xl:gap-10">
             {/* Ishyango.AI Card */}
             <div className="glass-card p-4 md:p-6">
               <div className="flex items-center mb-4">
@@ -201,43 +203,23 @@ export default function Home() {
       </section>
 
       {/* Newsletter Section */}
-      <section id="newsletter" className="py-16 md:py-20 px-4">
-        <div className="container mx-auto max-w-3xl">
-          <div className="glass-card p-6 md:p-8 text-center">
-            <i className="fas fa-newspaper text-4xl md:text-6xl neon-blue mb-4"></i>
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">K(now).AI Newsletter</h2>
-            <p className="text-gray-300 mb-6 text-sm md:text-base">
-              Weekly AI news & insights for students and builders. 
-              EdTech focus, technical deep-dives, and building journey updates.
-            </p>
-            <form className="flex flex-col md:flex-row gap-3 md:gap-4">
-              <input
-                type="email"
-                placeholder="your@email.com"
-                className="flex-1 px-4 py-3 rounded glass-card bg-transparent border border-[var(--neon-green)] text-white placeholder-gray-400 focus:outline-none focus:border-[var(--neon-blue)] text-sm md:text-base"
-              />
-              <button type="submit" className="glass-card px-6 py-3 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] font-bold hover:shadow-lg hover:shadow-[var(--glow-green)] transition duration-300 text-sm md:text-base">
-                <i className="fas fa-paper-plane mr-2"></i>Subscribe
-              </button>
-            </form>
-            <p className="text-xs md:text-sm text-gray-400 mt-4">
-              <i className="fas fa-lock mr-2"></i>No spam. Unsubscribe anytime.
-            </p>
-          </div>
+      <section id="newsletter" className="py-16 md:py-20 xl:py-28 px-4">
+        <div className="container mx-auto max-w-3xl xl:max-w-4xl 2xl:max-w-5xl">
+          <NewsletterSignup />
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 md:py-20 px-4 mb-16 md:mb-20">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-2xl md:text-4xl font-bold text-center mb-12 md:mb-16">
+      <section id="contact" className="py-16 md:py-20 xl:py-28 px-4 mb-16 md:mb-20 xl:mb-28">
+        <div className="container mx-auto max-w-3xl xl:max-w-4xl 2xl:max-w-5xl">
+          <h2 className="text-2xl md:text-4xl xl:text-5xl font-bold text-center mb-12 md:mb-16">
             <span className="glitch neon-text" data-text="INITIALIZE_CONTACT">INITIALIZE_CONTACT</span>
           </h2>
 
-          <div className="glass-card p-6 md:p-8">
+          <div className="glass-card p-6 md:p-8 xl:p-12">
             <div className="text-center mb-8">
-              <i className="fas fa-satellite-dish text-4xl md:text-6xl neon-blue mb-4"></i>
-              <p className="text-gray-300 mb-6 text-sm md:text-base">
+              <i className="fas fa-satellite-dish text-4xl md:text-6xl xl:text-7xl neon-blue mb-4"></i>
+              <p className="text-gray-300 mb-6 text-sm md:text-base xl:text-lg">
                 Ready to build something amazing together? Let's connect!
               </p>
             </div>
@@ -279,14 +261,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="support" className="py-16 md:py-20 px-4">
-        <div className="container mx-auto max-w-3xl">
-          <div className="glass-card p-6 md:p-8 text-center">
+      <section id="support" className="py-16 md:py-20 xl:py-28 px-4">
+        <div className="container mx-auto max-w-3xl xl:max-w-4xl 2xl:max-w-5xl">
+          <div className="glass-card p-6 md:p-8 xl:p-12 text-center">
             <i className="fas fa-hand-holding-heart text-4xl md:text-6xl neon-blue mb-4"></i>
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Support This Project</h2>
+            <h2 className="text-2xl md:text-3xl xl:text-4xl font-bold mb-4">Support This Project</h2>
             <p className="text-gray-300 mb-6 text-sm md:text-base">If you find these projects useful, consider supporting development.</p>
 
-            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 xl:gap-6 justify-center">
               <a href="https://paypal.me/yourusername" target="_blank" rel="noopener noreferrer" className="glass-card px-6 py-3 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] font-bold transition">
                 Support via PayPal
               </a>
@@ -306,7 +288,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="glass-card mx-4 mb-6 md:mb-8">
+      <footer className="glass-card mx-4 mb-6 md:mb-8 xl:mb-12 xl:mx-8 xl:max-w-[calc(100%-4rem)] xl:left-1/2 xl:relative xl:-translate-x-1/2">
         <div className="container mx-auto px-4 py-6 text-center text-gray-400 text-xs md:text-sm">
           <p>
             <i className="fas fa-code mr-2"></i>
