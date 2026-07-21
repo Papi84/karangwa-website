@@ -70,7 +70,7 @@ export default function Home() {
             </p>
 
             <div className="flex flex-wrap justify-center gap-3 md:gap-4">
-              <Link href="#ishyango" className="glass-card px-6 md:px-8 py-3 md:py-4 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] font-bold hover:shadow-lg hover:shadow-[var(--glow-green)] transition duration-300 text-sm md:text-base">
+              <Link href="/ishyango" className="glass-card px-6 md:px-8 py-3 md:py-4 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] font-bold hover:shadow-lg hover:shadow-[var(--glow-green)] transition duration-300 text-sm md:text-base">
                 <i className="fas fa-rocket mr-2"></i>Ishyango.AI
               </Link>
               <Link href="#projects" className="glass-card px-6 md:px-8 py-3 md:py-4 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] transition duration-300 text-sm md:text-base">
@@ -84,52 +84,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Ishyango.AI Featured Section */}
-      <section id="ishyango" className="py-16 md:py-20 xl:py-28 px-4">
+      {/* Ishyango.AI Featured Section — Compact card → full page */}
+      <section className="py-16 md:py-20 xl:py-28 px-4">
         <div className="container mx-auto max-w-5xl xl:max-w-6xl 2xl:max-w-7xl">
-          <h2 className="text-2xl md:text-4xl xl:text-5xl font-bold text-center mb-4">
-            <span className="glitch neon-text" data-text="ISHYANGO.AI">ISHYANGO.AI</span>
-          </h2>
-          <p className="text-center text-gray-400 mb-8 md:mb-12 text-sm md:text-base">Git-like Learning Companion for PDFs</p>
-
-          <div className="glass-card p-4 md:p-8">
-            <div className="grid md:grid-cols-2 xl:grid-cols-2 gap-6 md:gap-8 xl:gap-12 items-center">
-              <div>
-                <div className="text-4xl md:text-6xl mb-4">🦴</div>
-                <h3 className="text-xl md:text-2xl font-bold mb-4 neon-blue">The Vision</h3>
-                <p className="text-gray-300 mb-4 text-sm md:text-base">
-                  Students read hundreds of PDFs but lose insights in scattered notes. 
-                  Ishyango.AI tracks your understanding like git commits, makes color-coded notes, 
-                  and uses AI to connect concepts across 1000+ page technical books.
-                </p>
-                <p className="text-gray-300 mb-6 text-sm md:text-base">
-                  Named after the <strong>Ishango Bone</strong> (40,000-year-old African mathematical tool). 
-                  Ancient wisdom meets modern AI.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-6">
-                  <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-xs md:text-sm border border-[var(--neon-green)]">Tauri</span>
-                  <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-xs md:text-sm border border-[var(--neon-green)]">Rust</span>
-                  <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-xs md:text-sm border border-[var(--neon-green)]">React</span>
-                  <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-xs md:text-sm border border-[var(--neon-green)]">AI/ML</span>
-                  <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-xs md:text-sm border border-[var(--neon-green)]">SQLite</span>
-                </div>
-                <Link href="#contact" className="glass-card px-6 py-3 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] font-bold inline-block hover:shadow-lg hover:shadow-[var(--glow-green)] transition duration-300 text-sm md:text-base">
-                  <i className="fas fa-envelope mr-2"></i>Join Waitlist
-                </Link>
-              </div>
-              <div className="glass-card p-4 md:p-6 text-center">
-                <i className="fas fa-book-open text-4xl md:text-6xl neon-blue mb-4"></i>
-                <h4 className="text-lg md:text-xl font-bold mb-2">Features</h4>
-                <ul className="text-gray-300 text-xs md:text-sm space-y-2 text-left">
-                  <li>✓ Git-like commit system for learning</li>
-                  <li>✓ Color-coded notes (red=critical, green=key)</li>
-                  <li>✓ AI-powered summarization</li>
-                  <li>✓ Knowledge graph across PDFs</li>
-                  <li>✓ Export to Obsidian/Notion</li>
-                </ul>
-              </div>
+          <Link href="/ishyango">
+            <div className="glass-card p-6 md:p-8 xl:p-12 text-center hover:border-[var(--neon-green)] hover:shadow-lg hover:shadow-[var(--glow-green)] transition duration-300 cursor-pointer group">
+              <div className="text-4xl md:text-6xl mb-4">🦴</div>
+              <h2 className="text-2xl md:text-4xl xl:text-5xl font-bold mb-4">
+                <span className="glitch neon-text" data-text="ISHYANGO.AI">ISHYANGO.AI</span>
+              </h2>
+              <p className="text-gray-400 mb-2 text-sm md:text-base">Git-like Learning Companion for PDFs</p>
+              <p className="text-gray-300 mb-6 max-w-2xl mx-auto text-sm md:text-base">
+                Tracks your understanding like git commits, color-codes notes, and uses AI to connect 
+                concepts across 1000+ page technical books. Named after the 40,000-year-old Ishango Bone.
+              </p>
+              <span className="inline-block glass-card px-6 py-3 rounded border border-[var(--neon-green)] text-[var(--neon-green)] group-hover:bg-[var(--neon-green)] group-hover:text-[var(--dark-bg)] font-bold transition duration-300 text-sm md:text-base">
+                <i className="fas fa-arrow-right mr-2"></i>Go to Ishyango.AI
+              </span>
             </div>
-          </div>
+          </Link>
         </div>
       </section>
 
@@ -157,7 +130,7 @@ export default function Home() {
                 <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-xs md:text-sm border border-[var(--neon-green)]">Rust</span>
                 <span className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-xs md:text-sm border border-[var(--neon-green)]">AI</span>
               </div>
-              <Link href="#ishyango" className="text-[var(--neon-blue)] hover:underline text-sm md:text-base">
+              <Link href="/ishyango" className="text-[var(--neon-blue)] hover:underline text-sm md:text-base">
                 <i className="fas fa-arrow-right mr-2"></i>Learn More
               </Link>
             </div>
