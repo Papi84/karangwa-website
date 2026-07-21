@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import MatrixRain from '@/components/MatrixRain';
+import NewsletterSignup from '@/components/NewsletterSignup';
 
 const blogPosts = [
   {
@@ -14,14 +15,18 @@ const blogPosts = [
   },
 ];
 
+function getShareUrl(slug: string) {
+  return `https://www.karangwa.com/blog/${slug}`;
+}
+
 export default function Blog() {
   return (
     <main className="min-h-screen relative">
       <MatrixRain />
       
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 glass-card mx-4 mt-4 md:mx-8">
-        <div className="container mx-auto px-4 py-3 flex justify-between items-center flex-wrap gap-4">
+      <nav className="fixed top-0 left-0 right-0 z-50 glass-card mx-0 mt-0 md:mx-4 md:mt-4 md:max-w-[calc(100%-2rem)] md:left-1/2 md:-translate-x-1/2">
+        <div className="container mx-auto px-4 py-3 flex justify-between items-center gap-4">
           <div className="flex items-center">
             <div className="mr-3">
               <i className="fas fa-code text-2xl neon-text"></i>
@@ -31,13 +36,13 @@ export default function Blog() {
             </h1>
           </div>
           
-          <div className="hidden md:flex items-center justify-end flex-1 gap-8 lg:gap-12">
-            <Link href="/" className="text-lg lg:text-2xl font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2">HOME</Link>
-            <Link href="/#ishyango" className="text-lg lg:text-2xl font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2">ISHYANGO.AI</Link>
-            <Link href="/#projects" className="text-lg lg:text-2xl font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2">PROJECTS</Link>
-            <Link href="/blog" className="text-lg lg:text-2xl font-extrabold text-[var(--neon-green)] hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2">AI NEWS</Link>
-            <Link href="/#about" className="text-lg lg:text-2xl font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2">ABOUT</Link>
-            <Link href="/#contact" className="text-lg lg:text-2xl font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2">CONTACT</Link>
+          <div className="hidden md:flex items-center justify-end flex-1 gap-4 lg:gap-6 xl:gap-8">
+            <Link href="/" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">HOME</Link>
+            <Link href="/#ishyango" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">ISHYANGO.AI</Link>
+            <Link href="/#projects" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">PROJECTS</Link>
+            <Link href="/blog" className="text-sm lg:text-base xl:text-lg font-extrabold text-[var(--neon-green)] hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">AI NEWS</Link>
+            <Link href="/#about" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">ABOUT</Link>
+            <Link href="/#contact" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">CONTACT</Link>
           </div>
         </div>
       </nav>
@@ -45,10 +50,10 @@ export default function Blog() {
       {/* Blog Header */}
       <section className="pt-32 pb-16 px-4">
         <div className="container mx-auto max-w-6xl text-center flex flex-col items-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          <h1 className="text-4xl md:text-6xl xl:text-7xl font-bold mb-6">
             <span className="neon-text">K(now).AI</span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl xl:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
             Weekly AI news & insights for students and builders. 
             EdTech focus, technical deep-dives, and building journey updates.
           </p>
@@ -65,10 +70,11 @@ export default function Blog() {
 
       {/* Blog Posts */}
       <section className="py-16 px-4">
-        <div className="container mx-auto max-w-5xl">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="container mx-auto max-w-5xl xl:max-w-6xl 2xl:max-w-7xl">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 xl:gap-10">
             {blogPosts.map((post) => (
-              <Link href={`/blog/${post.slug}`} key={post.slug} className="glass-card p-6 hover:transform hover:-translate-y-2 transition duration-300">
+              <div key={post.slug} className="glass-card p-6 hover:transform hover:-translate-y-2 transition duration-300">
+                <Link href={`/blog/${post.slug}`}>
                 <div className="flex items-center mb-4">
                   <i className="fas fa-newspaper text-3xl md:text-4xl neon-blue mr-3"></i>
                   <div>
@@ -87,35 +93,54 @@ export default function Blog() {
                 <span className="text-[var(--neon-blue)] hover:underline text-sm md:text-base">
                   <i className="fas fa-arrow-right mr-2"></i>Read More
                 </span>
-              </Link>
+                </Link>
+
+                {/* Social share buttons */}
+                <div className="flex gap-2 mt-4 pt-3 border-t border-gray-700 border-opacity-50">
+                  <a
+                    href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(getShareUrl(post.slug))}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-500 hover:text-[#1DA1F2] text-sm transition duration-200"
+                    aria-label="Share on Twitter"
+                  >
+                    <i className="fab fa-twitter"></i>
+                  </a>
+                  <a
+                    href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(getShareUrl(post.slug))}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-500 hover:text-[#0A66C2] text-sm transition duration-200"
+                    aria-label="Share on LinkedIn"
+                  >
+                    <i className="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(getShareUrl(post.slug))}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-500 hover:text-[#1877F2] text-sm transition duration-200"
+                    aria-label="Share on Facebook"
+                  >
+                    <i className="fab fa-facebook"></i>
+                  </a>
+                  <button
+                    onClick={() => navigator.clipboard.writeText(getShareUrl(post.slug))}
+                    className="text-gray-500 hover:text-[var(--neon-green)] text-sm transition duration-200 ml-auto"
+                    aria-label="Copy link"
+                  >
+                    <i className="fas fa-link"></i>
+                  </button>
+                </div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Newsletter Section */}
       <section id="subscribe" className="py-16 md:py-20 px-4">
         <div className="container mx-auto max-w-3xl">
-          <div className="glass-card p-6 md:p-8 text-center">
-            <i className="fas fa-newspaper text-4xl md:text-6xl neon-blue mb-4"></i>
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Subscribe to K(now).AI</h2>
-            <p className="text-gray-300 mb-6 text-sm md:text-base">
-              Weekly AI news & insights for students and builders. 
-              EdTech focus, technical deep-dives, and building journey updates.
-            </p>
-            <a 
-              href="mailto:stevegoharder@gmail.com?subject=Subscribe to K(now).AI Newsletter"
-              className="glass-card px-8 py-4 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] font-bold hover:shadow-lg hover:shadow-[var(--glow-green)] transition duration-300 text-base md:text-lg inline-block"
-            >
-              <i className="fas fa-envelope mr-2"></i>Subscribe to Newsletter
-            </a>
-            <p className="text-xs md:text-sm text-gray-400 mt-4">
-              <i className="fas fa-info-circle mr-2"></i>Or email me directly: <a href="mailto:stevegoharder@gmail.com" className="text-[var(--neon-green)] hover:underline">stevegoharder@gmail.com</a>
-            </p>
-            <p className="text-xs md:text-sm text-gray-400 mt-4">
-              <i className="fas fa-lock mr-2"></i>No spam. Unsubscribe anytime.
-            </p>
-          </div>
+          <NewsletterSignup />
         </div>
       </section>
 
@@ -161,13 +186,7 @@ export default function Blog() {
             © 2026 - Solving problems like a real engineer
           </p>
           
-          <p className="text-gray-400 text-xs md:text-sm mb-2">
-            <i className="fas fa-code mr-2"></i>
-            Built with <span className="neon-green">♥</span> by Karangwa Abubakar
-          </p>
-          <p className="text-gray-400 text-xs md:text-sm">
-            © 2026 - Solving problems like a real engineer
-          </p>
+          
         </div>
       </footer>
     </main>
