@@ -101,8 +101,8 @@ export default function BlogPage() {
           ) : (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {posts.map((post) => (
-                <Link key={post.slug} href={`/blog/posts/${post.slug}`}>
-                  <div className="glass-card p-6 hover:transform hover:-translate-y-2 transition duration-300 h-full">
+                <div key={post.slug} className="glass-card p-6 hover:transform hover:-translate-y-2 transition duration-300 h-full flex flex-col">
+                  <Link href={`/blog/posts/${post.slug}`} className="flex-1 block">
                     <div className="mb-4">
                       <h3 className="text-lg md:text-xl font-bold text-white">{post.title}</h3>
                       <p className="text-xs text-gray-400 mt-1">
@@ -112,18 +112,39 @@ export default function BlogPage() {
                       </p>
                     </div>
                     <p className="text-gray-300 text-sm mb-4">{post.excerpt}</p>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2 mb-4">
                       {post.tags.map((tag) => (
                         <span key={tag} className="px-2 md:px-3 py-1 bg-[var(--neon-green)] bg-opacity-20 text-[var(--dark-bg)] rounded text-xs md:text-sm border border-[var(--neon-green)]">
                           {tag}
                         </span>
                       ))}
                     </div>
-                    <span className="text-[var(--neon-blue)] hover:underline text-sm mt-4 inline-block">
+                    <span className="text-[var(--neon-blue)] hover:underline text-sm">
                       Read more <i className="fas fa-arrow-right ml-1"></i>
                     </span>
+                  </Link>
+
+                  {/* Quick share */}
+                  <div className="flex items-center gap-2 mt-3 pt-3 border-t border-gray-700/50 text-xs">
+                    <span className="text-gray-500 mr-1">Share:</span>
+                    <button
+                      onClick={() => { const u = encodeURIComponent(`${window.location.origin}/blog/posts/${post.slug}`); const t = encodeURIComponent(post.title); window.open(`https://twitter.com/intent/tweet?text=${t}&url=${u}`, '_blank', 'width=600,height=400'); }}
+                      className="text-gray-500 hover:text-[#1DA1F2] transition" title="Share on X"
+                    ><i className="fab fa-x-twitter"></i></button>
+                    <button
+                      onClick={() => { const u = encodeURIComponent(`${window.location.origin}/blog/posts/${post.slug}`); window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${u}`, '_blank', 'width=600,height=400'); }}
+                      className="text-gray-500 hover:text-[#0A66C2] transition" title="Share on LinkedIn"
+                    ><i className="fab fa-linkedin-in"></i></button>
+                    <button
+                      onClick={() => { const u = encodeURIComponent(`${window.location.origin}/blog/posts/${post.slug}`); window.open(`https://wa.me/?text=${encodeURIComponent(post.title)}%20${u}`, '_blank'); }}
+                      className="text-gray-500 hover:text-[#25D366] transition" title="Share on WhatsApp"
+                    ><i className="fab fa-whatsapp"></i></button>
+                    <button
+                      onClick={() => { navigator.clipboard.writeText(`${window.location.origin}/blog/posts/${post.slug}`); }}
+                      className="text-gray-500 hover:text-[var(--neon-green)] transition" title="Copy link"
+                    ><i className="fas fa-link"></i></button>
                   </div>
-                </Link>
+                </div>
               ))}
             </div>
           )}

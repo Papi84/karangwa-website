@@ -145,6 +145,41 @@ export default function PostPage() {
             </div>
           </div>
 
+          {/* Share buttons */}
+          <div id="share" className="glass-card p-8 md:p-10 mb-12 text-center">
+            <p className="text-lg font-bold mb-6 neon-text">Share this brief</p>
+            <div className="flex flex-wrap justify-center gap-3">
+              <a
+                href="#"
+                onClick={(e) => { e.preventDefault(); const u = encodeURIComponent(window.location.href); const t = encodeURIComponent(post.title); window.open(`https://twitter.com/intent/tweet?text=${t}&url=${u}`, '_blank', 'width=600,height=400'); }}
+                className="glass-card px-5 py-3 rounded border border-[#1DA1F2] text-[#1DA1F2] hover:bg-[#1DA1F2] hover:text-white font-bold transition text-sm flex items-center gap-2"
+              ><i className="fab fa-x-twitter"></i> X</a>
+
+              <a
+                href="#"
+                onClick={(e) => { e.preventDefault(); const u = encodeURIComponent(window.location.href); window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${u}`, '_blank', 'width=600,height=400'); }}
+                className="glass-card px-5 py-3 rounded border border-[#0A66C2] text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white font-bold transition text-sm flex items-center gap-2"
+              ><i className="fab fa-linkedin-in"></i> LinkedIn</a>
+
+              <a
+                href="#"
+                onClick={(e) => { e.preventDefault(); const u = encodeURIComponent(window.location.href); window.open(`https://www.facebook.com/sharer/sharer.php?u=${u}`, '_blank', 'width=600,height=400'); }}
+                className="glass-card px-5 py-3 rounded border border-[#1877F2] text-[#1877F2] hover:bg-[#1877F2] hover:text-white font-bold transition text-sm flex items-center gap-2"
+              ><i className="fab fa-facebook-f"></i> Facebook</a>
+
+              <a
+                href="#"
+                onClick={(e) => { e.preventDefault(); const u = encodeURIComponent(window.location.href); const t = encodeURIComponent(post.title); window.open(`https://wa.me/?text=${t}%20${u}`, '_blank'); }}
+                className="glass-card px-5 py-3 rounded border border-[#25D366] text-[#25D366] hover:bg-[#25D366] hover:text-white font-bold transition text-sm flex items-center gap-2"
+              ><i className="fab fa-whatsapp"></i> WhatsApp</a>
+
+              <button
+                onClick={() => { navigator.clipboard.writeText(window.location.href); alert('Link copied!'); }}
+                className="glass-card px-5 py-3 rounded border border-gray-500 text-gray-300 hover:border-[var(--neon-green)] hover:text-[var(--neon-green)] font-bold transition text-sm flex items-center gap-2"
+              ><i className="fas fa-link"></i> Copy link</button>
+            </div>
+          </div>
+
           {/* Newsletter CTA */}
           <div className="mb-16">
             <NewsletterSignup />
