@@ -1,26 +1,23 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getPost } from '@/lib/content';
-import { seedContent } from '@/lib/seed';
-
-let seeded = false;
-function ensureSeeded() {
-  if (!seeded) {
-    seedContent();
-    seeded = true;
-  }
-}
+import { initSchema } from '@/lib/db';
 
 export async function GET(
   req: NextRequest,
   { params }: { params: Promise<{ slug: string }> }
 ) {
-  ensureSeeded();
-  const { slug } = await params;
-  const post = getPost(slug);
+  try {
+    await initSchema();
+    const { slug } = await params;
+    const post = await getPost(slug);
 
-  if (!post || post.status !== 'published') {
-    return NextResponse.json({ error: 'Not found' }, { status: 404 });
+    if (!post) {
+      return NextResponse.json({ error: 'Not found' }, { status: 404 });
+    }
+
+    return NextResponse.json({ post });
+  } catch (err) {
+    console.error('[Post] Error:', err);
+    return NextResponse.json({ error: 'Failed to fetch post' }, { status: 500 });
   }
-
-  return NextResponse.json({ post });
 }
