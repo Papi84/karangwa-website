@@ -18,6 +18,7 @@ export async function GET(
     return NextResponse.json({ post });
   } catch (err) {
     console.error('[Post] Error:', err);
-    return NextResponse.json({ error: 'Failed to fetch post' }, { status: 500 });
+    const msg = err instanceof Error ? err.message : 'Unknown error';
+    return NextResponse.json({ error: msg }, { status: 500 });
   }
 }
