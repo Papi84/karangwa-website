@@ -1,26 +1,23 @@
-// Database connection using pg (TCP) — works with pooler URLs on Vercel
-import { Pool } from 'pg';
+// Database connection using Neon serverless Postgres (HTTP fetch)
+// Uses the direct (non-pooler) connection string. Works great on Vercel.
+import { neon } from '@neondatabase/serverless';
 
-let pool: Pool | null = null;
+let sql: ReturnType<typeof neon> | null = null;
 
-export function getDb(): Pool {
-  if (!pool) {
+export function getDb() {
+  if (!sql) {
     const connectionString = process.env.DATABASE_URL;
     if (!connectionString) {
       throw new Error('DATABASE_URL env var not set');
     }
-    pool = new Pool({
-      connectionString,
-      ssl: { rejectUnauthorized: false },
-      connectionTimeoutMillis: 10000,
-      idleTimeoutMillis: 30000,
-      max: 5,
-    });
+    // Convert pooler URL to direct URL if needed
+    const directUrl = connectionString.replace('-pooler', '');
+    sql = neon(directUrl);
   }
-  return pool;
+  return sql;
 }
 
-// Initialize schema — called on first API request
+// Initialize schema
 let schemaInitDone = false;
 
 export async function initSchema(): Promise<void> {
@@ -29,7 +26,7 @@ export async function initSchema(): Promise<void> {
   const db = getDb();
 
   try {
-    await db.query(`
+    await db`
       CREATE TABLE IF NOT EXISTS drafts (
         id SERIAL PRIMARY KEY,
         source_tweet_id VARCHAR(64),
@@ -45,9 +42,9 @@ export async function initSchema(): Promise<void> {
         reviewed_at TIMESTAMPTZ,
         published_at TIMESTAMPTZ
       );
-    `);
+    `;
 
-    await db.query(`
+    await db`
       CREATE TABLE IF NOT EXISTS posts (
         slug VARCHAR(256) PRIMARY KEY,
         title VARCHAR(512) NOT NULL,
@@ -60,20 +57,19 @@ export async function initSchema(): Promise<void> {
         source_url TEXT,
         draft_id INTEGER REFERENCES drafts(id)
       );
-    `);
+    `;
 
-    await db.query(`
+    await db`
       CREATE TABLE IF NOT EXISTS subscribers (
         email VARCHAR(256) PRIMARY KEY,
         name VARCHAR(256),
         subscribed_at TIMESTAMPTZ NOT NULL DEFAULT now(),
         status VARCHAR(16) NOT NULL DEFAULT 'active'
       );
-    `);
+    `;
 
-    await db.query(`CREATE INDEX IF NOT EXISTS idx_drafts_source_tweet ON drafts(source_tweet_id) WHERE source_tweet_id IS NOT NULL;`);
-    await db.query(`CREATE INDEX IF NOT EXISTS idx_drafts_status ON drafts(status);`);
-    await db.query(`CREATE INDEX IF NOT EXISTS idx_posts_published ON posts(published_at DESC);`);
+    await db`CREATE INDEX IF NOT EXISTS idx_drafts_source_tweet ON drafts(source_tweet_id) WHERE source_tweet_id IS NOT NULL;`;
+    await db`CREATE INDEX IF NOT EXISTS idx_drafts_status ON drafts(status);`;
 
     schemaInitDone = true;
     console.log('[DB] Schema ready');
