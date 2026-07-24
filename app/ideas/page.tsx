@@ -264,7 +264,7 @@ export default function IdeasPage() {
                     )}
 
                     {idea.quoted_price && (
-                      <span className="text-xs font-bold text-[var(--neon-green)]">{idea.quoted_price.toLocaleString()} RWF</span>
+                      <span className="text-xs font-bold text-[var(--neon-green)]">{idea.quoted_price.toLocaleString()} USD</span>
                     )}
 
                     {!idea.scope_breakdown && (

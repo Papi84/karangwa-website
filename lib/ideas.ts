@@ -51,7 +51,7 @@ export interface Idea {
 
 // Service pricing for idea scoping
 export const SCOPING_PRICES = {
-  basic_scope: 10000,   // 10K RWF — AI breakdown + cost/time estimate
-  detailed_scope: 25000, // 25K RWF — AI + human review
+  basic_scope: 8,   // $8 — AI breakdown + cost/time estimate
+  detailed_scope: 15, // $15 — AI + human review
   full_build: null,      // Custom quote
 } as const;

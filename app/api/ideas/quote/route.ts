@@ -84,8 +84,8 @@ function generateScope(title: string, desc: string): string {
 }
 
 function generateCostEstimate(techStack: string[]): string {
-  const base = techStack.length > 0 ? '15,000 RWF/mo' : '8,000 RWF/mo';
-  return `Estimated monthly operating cost: ${base}\nOne-time development: 200,000 - 500,000 RWF depending on scope`;
+  const base = techStack.length > 0 ? '$50/mo' : '$30/mo';
+  return `Estimated monthly operating cost: ${base}\nOne-time development: $500 - $2,000 depending on scope`;
 }
 
 function generateTimeEstimate(techStack: string[]): string {

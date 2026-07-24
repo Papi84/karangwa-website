@@ -111,7 +111,7 @@ export default function SubmitJobPage() {
                   <label className="block text-sm font-semibold text-gray-300 mb-1">Salary Range</label>
                   <input value={form.salary_range} onChange={(e) => setForm({...form, salary_range: e.target.value})}
                     className="w-full px-4 py-3 rounded bg-[var(--dark-bg)] border border-gray-600 text-white focus:border-[var(--neon-green)] focus:outline-none transition text-sm"
-                    placeholder="e.g. 500K - 1M RWF" />
+                    placeholder="e.g. $30K - $80K" />
                 </div>
               </div>
 

@@ -33,21 +33,21 @@ export const SERVICES = {
   cv_polish: {
     id: 'cv_polish',
     name: 'CV Polish',
-    price: 15000, // RWF
+    price: 10, // USD
     description: 'AI-powered resume optimization + human review',
     features: ['ATS optimization', 'Keyword targeting', 'Format cleanup', '1 revision round'],
   },
   interview_prep: {
     id: 'interview_prep',
     name: 'Interview Prep',
-    price: 25000,
+    price: 20,
     description: 'Mock interview + personalized feedback + AI coaching',
     features: ['1 mock interview session', 'AI-powered feedback', 'Common questions guide', 'Follow-up tips'],
   },
   full_package: {
     id: 'full_package',
     name: 'Full Career Package',
-    price: 35000,
+    price: 25,
     description: 'CV polish + interview prep + priority job matching',
     features: ['Everything in CV Polish', 'Everything in Interview Prep', 'Priority job alerts', 'Direct referrals'],
   },
