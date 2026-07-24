@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import MobileNav from '@/components/MobileNav';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import MatrixRain from '@/components/MatrixRain';
@@ -83,6 +84,12 @@ export default function PostPage() {
             <Link href="/" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] transition duration-300 py-2 whitespace-nowrap">HOME</Link>
             <Link href="/ishyango" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] transition duration-300 py-2 whitespace-nowrap">ISHYANGO.AI</Link>
             <Link href="/blog" className="text-sm lg:text-base xl:text-lg font-extrabold text-[var(--neon-green)] transition duration-300 py-2 whitespace-nowrap">AI NEWS</Link>
+            <MobileNav links={[
+              { href: "/", label: "HOME" },
+              { href: "/blog", label: "AI NEWS", active: true },
+              { href: "/jobs", label: "JOBS" },
+              { href: "/ideas", label: "IDEAS" },
+            ]} />
           </div>
         </div>
       </nav>

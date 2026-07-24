@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import MobileNav from '@/components/MobileNav';
 import Link from 'next/link';
 import MatrixRain from '@/components/MatrixRain';
 
@@ -51,6 +52,12 @@ export default function SubmitJobPage() {
           <div className="hidden md:flex items-center gap-4 lg:gap-6">
             <Link href="/" className="text-sm lg:text-base font-extrabold text-white hover:text-[var(--neon-green)] transition py-2">HOME</Link>
             <Link href="/jobs" className="text-sm lg:text-base font-extrabold text-[var(--neon-green)] transition py-2">JOBS</Link>
+            <MobileNav links={[
+              { href: "/", label: "HOME" },
+              { href: "/blog", label: "AI NEWS" },
+              { href: "/jobs", label: "JOBS", active: true },
+              { href: "/ideas", label: "IDEAS" },
+            ]} />
           </div>
         </div>
       </nav>

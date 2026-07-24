@@ -4,6 +4,7 @@ import MatrixRain from '@/components/MatrixRain';
 import DownloadIshyango from '@/components/DownloadIshyango';
 import NewsletterSignup from '@/components/NewsletterSignup';
 import Link from 'next/link';
+import MobileNav from '@/components/MobileNav';
 
 export default function Home() {
   return (
@@ -31,6 +32,16 @@ export default function Home() {
             <Link href="/ideas" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">IDEAS</Link>
             <Link href="#about" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">ABOUT</Link>
             <Link href="#contact" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">CONTACT</Link>
+            <MobileNav links={[
+              { href: "#home", label: "HOME" },
+              { href: "/ishyango", label: "ISHYANGO.AI" },
+              { href: "#projects", label: "PROJECTS" },
+              { href: "/blog", label: "AI NEWS" },
+              { href: "/jobs", label: "JOBS" },
+              { href: "/ideas", label: "IDEAS" },
+              { href: "#about", label: "ABOUT" },
+              { href: "#contact", label: "CONTACT" },
+            ]} />
           </div>
           
           {/* Mobile Menu Button */}
