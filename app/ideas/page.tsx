@@ -108,14 +108,14 @@ export default function IdeasPage() {
             <Link href="/jobs" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] transition py-2 whitespace-nowrap">JOBS</Link>
             <Link href="/ideas" className="text-sm lg:text-base xl:text-lg font-extrabold text-[var(--neon-green)] transition py-2 whitespace-nowrap">IDEAS</Link>
             <Link href="/#projects" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] transition py-2 whitespace-nowrap">PROJECTS</Link>
-            <MobileNav links={[
-              { href: "/", label: "HOME" },
-              { href: "/blog", label: "AI NEWS" },
-              { href: "/jobs", label: "JOBS" },
-              { href: "/ideas", label: "IDEAS", active: true },
-              { href: "/#projects", label: "PROJECTS" },
-            ]} />
           </div>
+          <MobileNav links={[
+            { href: "/", label: "HOME" },
+            { href: "/blog", label: "AI NEWS" },
+            { href: "/jobs", label: "JOBS" },
+            { href: "/ideas", label: "IDEAS", active: true },
+            { href: "/#projects", label: "PROJECTS" },
+            ]} />
         </div>
       </nav>
 

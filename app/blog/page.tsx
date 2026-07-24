@@ -59,16 +59,16 @@ export default function BlogPage() {
             <Link href="/jobs" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">JOBS</Link>
             <Link href="/#about" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">ABOUT</Link>
             <Link href="/#contact" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">CONTACT</Link>
-            <MobileNav links={[
-              { href: "/", label: "HOME" },
-              { href: "/ishyango", label: "ISHYANGO.AI" },
-              { href: "/blog", label: "AI NEWS", active: true },
-              { href: "/jobs", label: "JOBS" },
-              { href: "/ideas", label: "IDEAS" },
-              { href: "/#projects", label: "PROJECTS" },
-              { href: "/#contact", label: "CONTACT" },
-            ]} />
           </div>
+          <MobileNav links={[
+            { href: "/", label: "HOME" },
+            { href: "/ishyango", label: "ISHYANGO.AI" },
+            { href: "/blog", label: "AI NEWS", active: true },
+            { href: "/jobs", label: "JOBS" },
+            { href: "/ideas", label: "IDEAS" },
+            { href: "/#projects", label: "PROJECTS" },
+            { href: "/#contact", label: "CONTACT" },
+          ]} />
         </div>
       </nav>
 

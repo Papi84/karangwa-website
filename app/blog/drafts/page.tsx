@@ -48,12 +48,12 @@ export default function DraftsPage() {
           <div className="hidden md:flex items-center gap-4 lg:gap-6">
             <Link href="/" className="text-sm lg:text-base font-extrabold text-white hover:text-[var(--neon-green)] transition duration-300 py-2">HOME</Link>
             <Link href="/blog" className="text-sm lg:text-base font-extrabold text-[var(--neon-green)] transition duration-300 py-2">AI NEWS</Link>
-            <MobileNav links={[
-              { href: "/", label: "HOME" },
-              { href: "/blog", label: "AI NEWS", active: true },
-              { href: "/blog/drafts", label: "DRAFTS" },
-            ]} />
           </div>
+          <MobileNav links={[
+            { href: "/", label: "HOME" },
+            { href: "/blog", label: "AI NEWS", active: true },
+            { href: "/blog/drafts", label: "DRAFTS" },
+            ]} />
         </div>
       </nav>
 

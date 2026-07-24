@@ -84,13 +84,13 @@ export default function PostPage() {
             <Link href="/" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] transition duration-300 py-2 whitespace-nowrap">HOME</Link>
             <Link href="/ishyango" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] transition duration-300 py-2 whitespace-nowrap">ISHYANGO.AI</Link>
             <Link href="/blog" className="text-sm lg:text-base xl:text-lg font-extrabold text-[var(--neon-green)] transition duration-300 py-2 whitespace-nowrap">AI NEWS</Link>
-            <MobileNav links={[
-              { href: "/", label: "HOME" },
-              { href: "/blog", label: "AI NEWS", active: true },
-              { href: "/jobs", label: "JOBS" },
-              { href: "/ideas", label: "IDEAS" },
-            ]} />
           </div>
+          <MobileNav links={[
+            { href: "/", label: "HOME" },
+            { href: "/blog", label: "AI NEWS", active: true },
+            { href: "/jobs", label: "JOBS" },
+            { href: "/ideas", label: "IDEAS" },
+            ]} />
         </div>
       </nav>
 
