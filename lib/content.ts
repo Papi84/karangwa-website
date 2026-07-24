@@ -32,11 +32,15 @@ export interface Draft {
   publishedAt?: string;
 }
 
+// Helper: get DB and cast results
+function db() {
+  return getDb();
+}
+
 // ── Posts ──
 
 export async function getPosts(status?: PostStatus): Promise<Post[]> {
-  const db = getDb();
-  const rows = (await db`
+  const rows = (await db()`
     SELECT slug, title, excerpt, content, author, published_at, updated_at, tags, source_url
     FROM posts
     ORDER BY published_at DESC
@@ -45,8 +49,7 @@ export async function getPosts(status?: PostStatus): Promise<Post[]> {
 }
 
 export async function getPost(slug: string): Promise<Post | null> {
-  const db = getDb();
-  const rows = (await db`
+  const rows = (await db()`
     SELECT slug, title, excerpt, content, author, published_at, updated_at, tags, source_url
     FROM posts
     WHERE slug = ${slug}
@@ -64,11 +67,11 @@ export async function savePost(post: {
   sourceUrl?: string;
   draftId?: number;
 }): Promise<void> {
-  const db = getDb();
-  await db`
+  await db()`
     INSERT INTO posts (slug, title, excerpt, content, author, published_at, tags, source_url, draft_id)
     VALUES (${post.slug}, ${post.title}, ${post.excerpt}, ${post.content},
-            ${post.author || 'K(now) AI'}, now(), ${post.tags || []}, ${post.sourceUrl || null}, ${post.draftId || null})
+            ${post.author || 'K(now) AI'}, now(), ${post.tags || []},
+            ${post.sourceUrl || null}, ${post.draftId || null})
     ON CONFLICT (slug) DO UPDATE SET
       title = EXCLUDED.title,
       excerpt = EXCLUDED.excerpt,
@@ -81,15 +84,20 @@ export async function savePost(post: {
 // ── Drafts ──
 
 export async function getDrafts(status?: DraftStatus): Promise<Draft[]> {
-  const db = getDb();
-  const rows = (await db`
-    SELECT id, source_tweet_id, source_author, source_url, raw_content,
-           topic_summary, suggested_title, status, slug, post_body,
-           created_at, reviewed_at, published_at
-    FROM drafts
-    ${status ? db`WHERE status = ${status}` : db``}
-    ORDER BY created_at DESC
-  `) as any[];
+  const rows = (status
+    ? await db()`
+        SELECT id, source_tweet_id, source_author, source_url, raw_content,
+               topic_summary, suggested_title, status, slug, post_body,
+               created_at, reviewed_at, published_at
+        FROM drafts WHERE status = ${status} ORDER BY created_at DESC
+      `
+    : await db()`
+        SELECT id, source_tweet_id, source_author, source_url, raw_content,
+               topic_summary, suggested_title, status, slug, post_body,
+               created_at, reviewed_at, published_at
+        FROM drafts ORDER BY created_at DESC
+      `
+  ) as any[];
   return rows.map(mapDraft);
 }
 
@@ -101,8 +109,7 @@ export async function saveDraft(draft: {
   topicSummary?: string;
   suggestedTitle?: string;
 }): Promise<Draft | null> {
-  const db = getDb();
-  const rows = (await db`
+  const rows = (await db()`
     INSERT INTO drafts (source_tweet_id, source_author, source_url, raw_content, topic_summary, suggested_title)
     VALUES (${draft.sourceTweetId || null}, ${draft.sourceAuthor || null},
             ${draft.sourceUrl || null}, ${draft.rawContent},
@@ -116,15 +123,14 @@ export async function saveDraft(draft: {
 }
 
 export async function updateDraftStatus(id: number, status: DraftStatus, slug?: string, postBody?: string): Promise<void> {
-  const db = getDb();
-  const nowField = status === 'approved' ? db`now()` : db`null`;
-  await db`
+  const now = new Date().toISOString();
+  await db()`
     UPDATE drafts SET
       status = ${status},
       slug = ${slug || null},
       post_body = ${postBody || null},
       reviewed_at = now(),
-      published_at = ${nowField}
+      published_at = ${status === 'approved' ? now : null}::timestamptz
     WHERE id = ${id}
   `;
 }
@@ -132,22 +138,18 @@ export async function updateDraftStatus(id: number, status: DraftStatus, slug?: 
 // ── Subscribers ──
 
 export async function addSubscriber(email: string, name?: string): Promise<void> {
-  const db = getDb();
-  await db`
-    INSERT INTO subscribers (email, name)
-    VALUES (${email.toLowerCase()}, ${name || null})
+  await db()`
+    INSERT INTO subscribers (email, name) VALUES (${email.toLowerCase()}, ${name || null})
     ON CONFLICT (email) DO UPDATE SET status = 'active', name = EXCLUDED.name
   `;
 }
 
 export async function removeSubscriber(email: string): Promise<void> {
-  const db = getDb();
-  await db`UPDATE subscribers SET status = 'unsubscribed' WHERE email = ${email.toLowerCase()}`;
+  await db()`UPDATE subscribers SET status = 'unsubscribed' WHERE email = ${email.toLowerCase()}`;
 }
 
 export async function getActiveSubscribers(): Promise<{ email: string; name?: string }[]> {
-  const db = getDb();
-  return (await db`SELECT email, name FROM subscribers WHERE status = 'active'`) as any[];
+  return (await db()`SELECT email, name FROM subscribers WHERE status = 'active'`) as any[];
 }
 
 // ── Mappers ──
