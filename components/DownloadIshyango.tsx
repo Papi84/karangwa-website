@@ -156,12 +156,12 @@ export default function DownloadIshyango() {
           {release && !loading && (
             <>
               {/* Platform selectors */}
-              <div className="flex justify-center gap-3 mb-6">
+              <div className="flex flex-wrap justify-center gap-3 mb-6">
                 {(Object.keys(platformNames) as Platform[]).map((p) => (
                   <button
                     key={p}
                     onClick={() => setSelectedPlatform(p)}
-                    className={`glass-card px-4 py-2 rounded border text-sm transition duration-200 ${
+                    className={`glass-card min-h-[44px] px-4 py-2 rounded border text-sm transition duration-200 ${
                       selectedPlatform === p
                         ? "border-[var(--neon-green)] text-[var(--neon-green)] bg-[var(--neon-green)] bg-opacity-10"
                         : "border-gray-600 text-gray-400 hover:border-gray-400"
@@ -179,7 +179,7 @@ export default function DownloadIshyango() {
                   href={primaryAsset.browser_download_url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block glass-card px-8 py-4 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] font-bold hover:shadow-lg hover:shadow-[var(--glow-green)] transition duration-300 text-base md:text-lg mb-4"
+                  className="inline-block max-w-full glass-card px-5 py-3 md:px-8 md:py-4 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] font-bold hover:shadow-lg hover:shadow-[var(--glow-green)] transition duration-300 text-base md:text-lg mb-4"
                 >
                   <i className={`${platformIcons[selectedPlatform!]} mr-2`}></i>
                   Download for {platformNames[selectedPlatform!]}

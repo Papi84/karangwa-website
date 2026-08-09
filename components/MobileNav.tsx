@@ -21,8 +21,9 @@ export default function MobileNav({ links }: MobileNavProps) {
       {/* Hamburger Button */}
       <button
         onClick={() => setOpen(!open)}
-        className="md:hidden text-[var(--neon-green)] text-2xl z-50 relative"
+        className="md:hidden relative z-50 flex h-11 w-11 items-center justify-center rounded-md border border-[var(--neon-green)]/60 bg-[rgba(10,10,15,0.7)] text-[var(--neon-green)] text-2xl shadow-[0_0_12px_rgba(0,255,157,0.28)] transition hover:border-[var(--neon-green)]"
         aria-label="Toggle menu"
+        aria-expanded={open}
       >
         <i className={`fas ${open ? 'fa-times' : 'fa-bars'} transition-transform duration-300`}></i>
       </button>
@@ -42,7 +43,7 @@ export default function MobileNav({ links }: MobileNavProps) {
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className={`text-2xl font-extrabold transition duration-300 py-2 px-6 rounded ${
+                className={`flex min-h-[44px] items-center justify-center text-2xl font-extrabold transition duration-300 py-2 px-6 rounded ${
                   link.active
                     ? 'text-[var(--neon-green)] border border-[var(--neon-green)]'
                     : 'text-white hover:text-[var(--neon-green)]'
