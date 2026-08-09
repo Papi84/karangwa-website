@@ -282,7 +282,7 @@ export default function IshyangoPage() {
               href="https://github.com/Papi84/ishyango-desktop"
               target="_blank"
               rel="noopener noreferrer"
- Higgsfield AI              className="text-purple-400 hover:text-purple-300 transition"
+              className="text-purple-400 hover:text-purple-300 transition"
             >
               GitHub
             </a>
