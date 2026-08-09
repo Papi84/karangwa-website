@@ -13,16 +13,16 @@ export default function Home() {
       
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 glass-card mx-0 mt-0 md:mx-4 md:mt-4 md:max-w-[calc(100%-2rem)] md:left-1/2 md:-translate-x-1/2">
-        <div className="container mx-auto px-4 py-3 flex justify-between items-center gap-4">
-          <div className="flex items-center">
-            <div className="mr-3">
+        <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-4 py-3">
+          <div className="flex items-center min-w-0">
+            <div className="mr-3 shrink-0">
               <i className="fas fa-code text-2xl neon-text"></i>
             </div>
-            <h1 className="text-lg md:text-xl font-bold">
+            <h1 className="text-base md:text-xl font-bold truncate">
               <span className="glitch" data-text="KARANGWA.DEV">KARANGWA.DEV</span>
             </h1>
           </div>
-          
+
           <div className="hidden md:flex items-center justify-end flex-1 gap-4 lg:gap-6 xl:gap-8">
             <Link href="#home" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">HOME</Link>
             <Link href="/ishyango" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">ISHYANGO.AI</Link>
@@ -33,6 +33,7 @@ export default function Home() {
             <Link href="#about" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">ABOUT</Link>
             <Link href="#contact" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">CONTACT</Link>
           </div>
+
           <MobileNav links={[
             { href: "#home", label: "HOME" },
             { href: "/ishyango", label: "ISHYANGO.AI" },
@@ -43,11 +44,6 @@ export default function Home() {
             { href: "#about", label: "ABOUT" },
             { href: "#contact", label: "CONTACT" },
           ]} />
-          
-          {/* Mobile Menu Button */}
-          <button className="md:hidden text-[var(--neon-green)] text-2xl">
-            <i className="fas fa-bars"></i>
-          </button>
         </div>
       </nav>
 
@@ -66,7 +62,7 @@ export default function Home() {
               </div>
             </div>
 
-            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 md:mb-6">
+            <h2 className="mb-4 text-[clamp(2.5rem,8vw,6rem)] font-bold leading-[0.9] md:mb-6">
               <span className="neon-blue">KARANGWA</span>
               <br />
               <span className="neon-text">ABUBAKAR</span>
@@ -83,13 +79,13 @@ export default function Home() {
             </p>
 
             <div className="flex flex-wrap justify-center gap-3 md:gap-4">
-              <Link href="/ishyango" className="glass-card px-6 md:px-8 py-3 md:py-4 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] font-bold hover:shadow-lg hover:shadow-[var(--glow-green)] transition duration-300 text-sm md:text-base">
+              <Link href="/ishyango" className="glass-card min-h-[44px] px-5 py-3 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] font-bold hover:shadow-lg hover:shadow-[var(--glow-green)] transition duration-300 text-sm md:text-base">
                 <i className="fas fa-rocket mr-2"></i>Ishyango.AI
               </Link>
-              <Link href="#projects" className="glass-card px-6 md:px-8 py-3 md:py-4 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] transition duration-300 text-sm md:text-base">
+              <Link href="#projects" className="glass-card min-h-[44px] px-5 py-3 rounded border border-[var(--neon-green)] text-[var(--neon-green)] hover:bg-[var(--neon-green)] hover:text-[var(--dark-bg)] transition duration-300 text-sm md:text-base">
                 <i className="fas fa-code mr-2"></i>Projects
               </Link>
-              <Link href="https://github.com/Papi84" target="_blank" className="glass-card px-6 md:px-8 py-3 md:py-4 rounded border border-gray-500 text-gray-300 hover:border-[var(--neon-blue)] hover:text-[var(--neon-blue)] transition duration-300 text-sm md:text-base">
+              <Link href="https://github.com/Papi84" target="_blank" className="glass-card min-h-[44px] px-5 py-3 rounded border border-gray-500 text-gray-300 hover:border-[var(--neon-blue)] hover:text-[var(--neon-blue)] transition duration-300 text-sm md:text-base">
                 <i className="fab fa-github mr-2"></i>GitHub
               </Link>
             </div>
@@ -128,7 +124,7 @@ export default function Home() {
             <span className="glitch neon-text" data-text="PROJECTS">PROJECTS</span>
           </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 md:gap-8 xl:gap-10">
+          <div className="auto-fit-grid">
             {/* Ishyango.AI Card */}
             <div className="glass-card p-4 md:p-6">
               <div className="flex items-center mb-4">
@@ -263,26 +259,20 @@ export default function Home() {
                 Become a Patron
               </a>
 
-              <a href="https://github.com/sponsors/Papi84" target="_blank" rel="noopener noreferrer" className="glass-card px-6 py-3 rounded border border-purple-500 text-purple-300 hover:bg-purple-600 hover:text-white font-bold transition">
+              <a href="https://github.com/sponsors/Papi84" target="_blank" rel="noopener noreferrer" className="glass-card px-6 py-3 rounded border border-gray-500 text-gray-300 hover:border-[var(--neon-green)] hover:text-[var(--neon-green)] font-bold transition">
                 GitHub Sponsor
               </a>
             </div>
 
-            <p className="text-xs text-gray-400 mt-4">Thanks for your support — every contribution helps keep these projects alive.</p>
+            <p className="text-gray-400 mt-6 text-sm md:text-base">Thanks for your support — every contribution helps keep these projects alive.</p>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="glass-card mx-4 mb-6 md:mb-8 xl:mb-12 xl:mx-8 xl:max-w-[calc(100%-4rem)] xl:left-1/2 xl:relative xl:-translate-x-1/2">
-        <div className="container mx-auto px-4 py-6 text-center text-gray-400 text-xs md:text-sm">
-          <p>
-            <i className="fas fa-code mr-2"></i>
-            Built with <span className="neon-green">♥</span> by Karangwa Abubakar
-          </p>
-          <p className="mt-2">
-            © 2026 - Solving problems like a real engineer
-          </p>
+        <div className="py-6 px-4 text-center text-gray-300">
+          <p className="mb-3 text-sm md:text-base">Built with ♥ by Karangwa Abubakar</p>
+          <p className="text-xs md:text-sm text-gray-400">© 2026 - Solving problems like a real engineer</p>
         </div>
       </footer>
     </main>
