@@ -32,7 +32,7 @@ export default function Home() {
             <Link href="/ideas" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">IDEAS</Link>
             <Link href="#about" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">ABOUT</Link>
             <Link href="#contact" className="text-sm lg:text-base xl:text-lg font-extrabold text-white hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">CONTACT</Link>
-            <a href="https://patreon.com/yourpage" target="_blank" rel="noopener noreferrer" className="text-sm lg:text-base xl:text-lg font-extrabold text-orange-400 hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">
+            <a href="https://www.patreon.com/cw/Karangwa" target="_blank" rel="noopener noreferrer" className="text-sm lg:text-base xl:text-lg font-extrabold text-orange-400 hover:text-[var(--neon-green)] hover:underline decoration-[var(--neon-green)] decoration-2 underline-offset-8 transition duration-300 cursor-pointer py-2 whitespace-nowrap">
               <i className="fab fa-patreon mr-2"></i>Support on Patreon
             </a>
           </div>
@@ -45,7 +45,7 @@ export default function Home() {
             { href: "/ideas", label: "IDEAS" },
             { href: "#about", label: "ABOUT" },
             { href: "#contact", label: "CONTACT" },
-            { href: "https://patreon.com/yourpage", label: "PATREON" },
+            { href: "https://www.patreon.com/cw/Karangwa", label: "PATREON" },
           ]} />
           
           {/* Mobile Menu Button */}
@@ -263,7 +263,7 @@ export default function Home() {
                 Support via PayPal
               </a>
  
-              <a href="https://patreon.com/yourpage" target="_blank" rel="noopener noreferrer" className="glass-card px-6 py-3 rounded border border-[var(--neon-blue)] text-[var(--neon-blue)] hover:bg-[var(--neon-blue)] hover:text-[var(--dark-bg)] font-bold transition">
+              <a href="https://www.patreon.com/cw/Karangwa" target="_blank" rel="noopener noreferrer" className="glass-card px-6 py-3 rounded border border-[var(--neon-blue)] text-[var(--neon-blue)] hover:bg-[var(--neon-blue)] hover:text-[var(--dark-bg)] font-bold transition">
                 Become a Patron
               </a>
  
@@ -288,7 +288,7 @@ export default function Home() {
             © 2026 - Solving problems like a real engineer
           </p>
           <p className="mt-3">
-            <a href="https://patreon.com/yourpage" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 glass-card px-4 py-2 rounded border border-[var(--neon-blue)] text-[var(--neon-blue)] hover:bg-[var(--neon-blue)] hover:text-[var(--dark-bg)] transition font-bold text-sm">
+            <a href="https://www.patreon.com/cw/Karangwa" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 glass-card px-4 py-2 rounded border border-[var(--neon-blue)] text-[var(--neon-blue)] hover:bg-[var(--neon-blue)] hover:text-[var(--dark-bg)] transition font-bold text-sm">
               <i className="fab fa-patreon mr-2"></i>Support on Patreon
             </a>
           </p>
